@@ -21,7 +21,7 @@ What to do?
 (if: $doginteracted is not true)[
 	You can (if: not ((history:) contains &quot;takechocolate&quot;))[also] [[pet|petdog]] or [[kick|kickdog]](if: (history:) contains &quot;takechocolate&quot;)[ or [[feed the chocolate]] to] the dog.
 ]
-Don&#x27;t daudle too long; it&#x27;s almost time to [[head off to school|scene2start]].</tw-passagedata><tw-passagedata pid="2" name="takechocolate" tags="" position="281,310">You look around. Your mother&#x27;s gone to warm up the car, so nobody&#x27;s watching you as you grab the forbidden chocolate from the table and slip it into your pocket.
+Don&#x27;t daudle too long; it&#x27;s almost time to [[head off to school|scene2start]].</tw-passagedata><tw-passagedata pid="2" name="takechocolate" tags="" position="281,310">You look around. Your mother&#x27;s gone to start up the car, so nobody&#x27;s watching you as you grab the forbidden chocolate from the table and slip it into your pocket.
 
 [[Continue|scene1starthouse]]</tw-passagedata><tw-passagedata pid="3" name="petdog" tags="" position="131,309">You gently stroke the ears of your puppy, and the puppy responds with a joyful yelp.(set: $doginteracted to true)
 [[scene1starthouse&lt;-Continue]]</tw-passagedata><tw-passagedata pid="4" name="kickdog" tags="" position="592,307">You stroll up to the puppy and give it a kick to its behind.
@@ -36,7 +36,77 @@ Within seconds, a small amount of foam begin to appear at the dog&#x27;s mouth.
 
 (set: $doginteracted to true)
 
-[[Continue|scene1starthouse]]</tw-passagedata><tw-passagedata pid="6" name="scene2start" tags="" position="359,516">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+[[Continue|scene1starthouse]]</tw-passagedata><tw-passagedata pid="6" name="scene2start" tags="" position="358,438">You wave a quick goodbye to your mother, and to the puppy who is (if: (history:) contains &quot;feed the chocolate&quot;)[convulsing horribly](elseif: (history:) contains &quot;kickdog&quot;)[strugglingto get back up near the patio door](else:)[still wagging his tail] and set off to school.
+
+On the street corner, a familiar voice greets you:
+
+&quot;Yo! Ugh, you ready for the stupid test today?&quot;, James says as he and Mark walks up beside you.
+
+&quot;I&#x27;m sure ready!&quot;, Mark pipes up.
+
+&quot;You sound like you actually like that test. I swear, skateboarding sounds more fun than some stupid term end test anyday.&quot;, James replied.
+
+&quot;The test is important! If I&#x27;m unable to acquire a satisfactory score, I won&#x27;t be admitted to the accelerated high school program!&quot; Mark has tried to use less big words since he started hanging out with us, but when he&#x27;s excited the fancy vocab slips out again.
+
+&quot;Tell you what&quot;, James announced, &quot;I ain&#x27;t going to be stuck in that stupid room writing that test. I&#x27;m going skateboarding. You comin&#x27;?&quot;
+
+Mark stared at you. You guessed that Mark really wants to follow James - he&#x27;s the coolest kid in the grade; everyone wants to be like him - but really wants to do well on that test too. He&#x27;s probably going to do what you do.
+
+Do you want to [[follow James and skip school|skipschool]] or [[go to school and face that test|gotoschool]]?</tw-passagedata><tw-passagedata pid="7" name="skipschool" tags="" position="358,588">&quot;Let&#x27;s roll, James&quot;, you replied. James pulls out his skateboard, jumps on it, motions you to catch up, and speeds away.
+
+Mark takes a hesitating look to the school, then turns around and runs after James. You do likewise.
+
+&quot;Here we go. Sweetest obstacle course I&#x27;ve ever seen.&quot; James announced.
+
+You three are on the edge of the woods north of No. 1 Street - a fence with a &quot;Do not trespass&quot; sign and a rather large hole is behind you.
+
+&quot;Last one to the lake solves algebra for fun!&quot;, James shouted as he started to jump on his board again.
+
+Mark mumbled, &quot;but I do enjoy algebra...&quot;
+
+Just then, you hear sirens behind you. Police! Suddenly the &quot;No trespass&quot; sign seems to have grown bigger.
+
+Mark whispered, &quot;oh we&#x27;re in so much trouble what if our parents discover our absenteeism&quot;
+
+James shouts, &quot;Run for it!&quot;, and gives a big push on his board. You and Mark scrambles to [[follow him on foot|skipschool2]].</tw-passagedata><tw-passagedata pid="8" name="gotoschool" tags="" position="508,588">Mr. Freeman, our teacher, was a nice guy. Even James had to admit that. He started the class not with the dreaded test, but with a comprehensive review session. By the end of it, I was feeling... can it be? - confident.
+
+&quot;And one more piece of advice: if you don&#x27;t know what the answer is, just guess! After all, this is science class; don&#x27;t be afraid to experiment!&quot;, Mr. Freeman announced as he handed out the tests.
+
+Well, this is it, then. [[the dreaded test|easytest]].</tw-passagedata><tw-passagedata pid="9" name="skipschool2" tags="" position="358,738">All three of you scramble to get away from the edge of the forest before the police finds you trespassing. You run faster than Mark (like everyone else in your grade), but way slower than James, even without his skateboard (Despite his boasts during recess he can&#x27;t actually skate the twisty dirt paths in the woods). You spent so much effort trying to catch up with James in your panicked run, but you finally met up with him on the shore of the small lake.
+
+&quot;Phew. That was close. My mom would&#x27;ve killed me if they had caught me trespassing here again. Say, where&#x27;s that slowpoke Mark? Ugh. we&#x27;ll wait for him; hopefully the police hasn&#x27;t got him yet.&quot;
+
+After waiting for ten minutes, there&#x27;s still no sign of Mark. We retraced our steps and found Mark whimpering beside a tree stump.
+
+&quot;AAAowwww my leg!! There&#x27;s so much hemorrhaging!!&quot;
+
+&quot;You... broke your leg? Is that where the blood is coming from?&quot;
+
+&quot;YeessAaaowww! I don&#x27;t want to die in the forest!&quot;
+
+James mumbled, &quot;If my mom finds out about this, I&#x27;m dead.&quot; Then he took off at a run again.
+
+&quot;Where are you going?&quot; I yelled after him, but he didn&#x27;t respond. You can guess though - he&#x27;s running back to school; he&#x27;ll get in less trouble for that than for getting Mark in this bind.
+
+By now you&#x27;re pretty scared - the adrenaline from the run has worn off; you can hear sirens - so the police is still looking for trespassers; you wonder if you should [[follow James back to school, leaving Mark behind|followjamesback]] or [[stay and help Mark|stayandhelpmark]].</tw-passagedata><tw-passagedata pid="10" name="followjamesback" tags="" position="358,887">As you near the school, you wonder if you should tell the school nurse about what happened to Mark. But before you can think of a good enough lie Mr. Freeman sights you, and shouts, &quot;What are you two waiting there for? The test&#x27;s about to start! You already missed the whole review session!&quot;
+
+Oh well, might as well [[finish the test|hardtest]]. Mark&#x27;ll be alright.</tw-passagedata><tw-passagedata pid="11" name="stayandhelpmark" tags="" position="508,888">&quot;Don&#x27;t worry, Mark!&quot;, you shout, but you know that you can&#x27;t do first aid. What to do?
+
+&quot;I see you kiddos been trespassing here&quot;, chimed a voice behind us. A police officer showed up. &quot;and looks like your friend here already paid the price for it. Take the one with the broken leg to hospital, and take the other back to school.&quot;
+
+This is it, then. Caught by the police. At least they&#x27;re not punishing us; they&#x27;re just taking Mark to hospital and [[taking me back to school]].</tw-passagedata><tw-passagedata pid="12" name="taking me back to school" tags="" position="508,1038">The police officer stops at the school, and pulled me to the front desk of the school, where he explained that Mark and I had been caught skipping school and that Mark&#x27;s been injured. You start to wonder if Mark would be all right, but Mr. Freeman sights you, and shouts, &quot;What are you doing here for? The test&#x27;s about to start! You already missed the whole review session!&quot;
+
+Sigh. Might as well [[face the test|hardtest]].</tw-passagedata><tw-passagedata pid="13" name="hardtest" tags="" position="358,1035">You stare at the test paper in front of you, heart still pounding from the chase.
+(set: $testscore to 0)
+### Social Studies, Science, and Math Cumulative Multiple Choice Term Test
+Name: ______ Date: ______ Score: _____
+
+1. According to “Controlling 64 Bit Architectures and Write-Ahead Logging with EEL,” why must XML work?
+
+a) (link:&quot;Symmetric encryption can be applied to the visualization of B-trees&quot;)[(set: $testscore to $testscore + 1)(goto:&quot;hardtest_q2&quot;)]
+b) [[Asymmetric encryption can be used to balance BFS-trees|hardtest_q2]]
+c) [[Write ahead logging is used in the production of multi-level page tables, which allows for efficient creation of a Java tree.|hardtest_q2]]
+d) [[Hackers use superpages to reduce the signal-to-noise ratio of EEL, which is a function of signal-to-noise ratio.|hardtest_q2]]</tw-passagedata><tw-passagedata pid="14" name="hardtest_q2" tags="" position="358,1187">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="15" name="easytest" tags="" position="508,738">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">/**
  * @license almond 0.3.0 Copyright (c) 2011-2014, The Dojo Foundation All Rights Reserved.
