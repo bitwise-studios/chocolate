@@ -135,7 +135,11 @@ a) [[Toronto|easytest_end]]
 b) [[Vancouver|easytest_end]]
 c) (link: &quot;Ottawa&quot;)[(set: $testscore to $testscore + 1)(goto: &quot;easytest_end&quot;)]
 d) [[Tsundere Bay|easytest_end]]
-</tw-passagedata><tw-passagedata pid="19" name="easytest_end" tags="" position="684,1189">Bla bla bla easytest end</tw-passagedata><tw-passagedata pid="20" name="hardtest_q3" tags="" position="358,1337">3) Given that mumble mumble is mumble, what is the radius of the earth?
+</tw-passagedata><tw-passagedata pid="19" name="easytest_end" tags="" position="684,1189">You hand in your test, confident of your success.
+
+After half a week, Mr. Freeman returns the test. You snatch it up, and it reads, &quot;Score: (print: $testscore)/4&quot;.
+
+[[cool.|scene5]]</tw-passagedata><tw-passagedata pid="20" name="hardtest_q3" tags="" position="358,1337">3) Given that mumble mumble is mumble, what is the radius of the earth?
 
 a) [[10000km|hardtest_q4]]
 b) [[6,731,000,000,000mm|hardtest_q4]]
@@ -145,4 +149,19 @@ d) [[MINECRAFT|hardtest_q4]]</tw-passagedata><tw-passagedata pid="21" name="hard
 a) [[Blah|hardtest_finish]]
 b) [[Blah blah|hardtest_finish]]
 c) [[Mumble|hardtest_finish]]
-d) [[I DON&#x27;T EVEN|hardtest_finish]]</tw-passagedata><tw-passagedata pid="22" name="hardtest_finish" tags="" position="358,1612">hardtest finish</tw-passagedata></tw-storydata>
+d) [[I DON&#x27;T EVEN|hardtest_finish]]</tw-passagedata><tw-passagedata pid="22" name="hardtest_finish" tags="" position="358,1629">You hand in your test, confident that you&#x27;ve failed miserably on the test.
+
+Sure enough, after half a week, Mr. Freeman returns the test with bad news written on the header: &quot;Score: (print: $testscore)/4&quot;
+
+[[Oh, well.|scene5]]</tw-passagedata><tw-passagedata pid="23" name="scene5" tags="" position="360,1779">...
+...
+
+Yawn. another morning in the house you&#x27;ve lived in for... 25? 29? (you think.) years.
+
+Not much changed during all these years: there&#x27;s still a table in the middle of the living room. (if: (history:) contains &quot;feed the chocolate&quot;)[The only addition is a small headstone labelled &quot;Here lies Puppy&quot; in the yard.](else:)[{
+Puppy - whom everyone still calls &quot;puppy&quot; by force of habit, even though it&#x27;s now become quite a misnomer for an old dog - is still wagging his tail. When he spots you, he
+(if: (history:) contains &quot;kickdog&quot;)[
+	whimpers and runs away from you. Stupid dog.]
+(else:)[
+falls into the old routine of staring at you, hoping for a treat.]
+}]</tw-passagedata></tw-storydata>
