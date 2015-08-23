@@ -1,0 +1,27 @@
+<tw-storydata name="MonsterJam" startnode="1" creator="Twine" creator-version="2.0.8" ifid="0501C710-D6C5-4F0C-B390-2E42B382DB37" format="Harlowe" options=""><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="scene1starthouse" tags="" position="355,156">Yawn. another morning in the house you&#x27;ve lived in for 12 years.
+
+(if: not ((history:) contains &quot;scene1starthouse&quot;))[Your mom hands you your backpack, and warns, &quot;don&#x27;t eat that chocolate on the table&quot;.
+]
+Your new puppy is (if: (history:) contains &quot;feed the chocolate&quot;)[making funny gagging noises](elseif: (history:) contains &quot;kickdog&quot;)[lying in a pile beside the patio door](else:)[wagging his tail near the door and staring at you - he&#x27;s probably hoping for a treat before you head off to school].
+
+What to do?
+(if: not ((history:) contains &quot;takechocolate&quot;))[You can [[take the chocolate|takechocolate]].]
+(if: $doginteracted is not true)[
+	You can (if: not ((history:) contains &quot;takechocolate&quot;))[also] [[pet|petdog]] or [[kick|kickdog]](if: (history:) contains &quot;takechocolate&quot;)[ or [[feed the chocolate]] to] the dog.
+]
+Don&#x27;t daudle too long; it&#x27;s almost time to [[head off to school|scene2start]].</tw-passagedata><tw-passagedata pid="2" name="takechocolate" tags="" position="281,310">You look around. Your mother&#x27;s gone to warm up the car, so nobody&#x27;s watching you as you grab the forbidden chocolate from the table and slip it into your pocket.
+
+[[Continue|scene1starthouse]]</tw-passagedata><tw-passagedata pid="3" name="petdog" tags="" position="131,309">You gently stroke the ears of your puppy, and the puppy responds with a joyful yelp.(set: $doginteracted to true)
+[[scene1starthouse&lt;-Continue]]</tw-passagedata><tw-passagedata pid="4" name="kickdog" tags="" position="592,307">You stroll up to the puppy and give it a kick to its behind.
+
+With a yelp the small dog flies across the room and hits the patio door. Through the door, you can see your mother turn her head to search the source of the noise, and after a second turn her head away again.
+(set: $doginteracted to true)
+[[Continue|scene1starthouse]]</tw-passagedata><tw-passagedata pid="5" name="feed the chocolate" tags="" position="439,300">You recall with glee of the TV program you watched yesterday. You know, the one where they said chocolate will poison dogs?
+
+You offer the chocolate to the puppy, who jumps up and gobbles it down.
+
+Within seconds, a small amount of foam begin to appear at the dog&#x27;s mouth.
+
+(set: $doginteracted to true)
+
+[[Continue|scene1starthouse]]</tw-passagedata><tw-passagedata pid="6" name="scene2start" tags="" position="359,516">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
