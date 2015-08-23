@@ -155,57 +155,39 @@ d) [[I DON&#x27;T EVEN|hardtest_finish]]</tw-passagedata><tw-passagedata pid="22
 
 Sure enough, after half a week, Mr. Freeman returns the test with bad news written on the header: &quot;Score: (print: $testscore)/4&quot;
 
-[[Oh, well.|scene5]]</tw-passagedata><tw-passagedata pid="23" name="scene5" tags="" position="361,1777">...
+[[Oh, well.|scene5]]</tw-passagedata><tw-passagedata pid="23" name="scene5" tags="" position="361,1775">...
 ...
 
 Yawn. another (if: (history:) contains &quot;stayandhelpmark&quot;)[evening](else:)[morning] in the house you&#x27;ve lived in for... 25? 29? (you think.) years.
 
 Not much changed during all these years: there&#x27;s still a table in the middle of the living room. (if: (history:) contains &quot;feed the chocolate&quot;)[The only addition is a small headstone labelled &quot;Here lies Puppy&quot; in the yard.](else:)[{
 Puppy - whom everyone still calls &quot;puppy&quot; by force of habit, even though it&#x27;s now become quite a misnomer for an old dog - still wags his tail. When he spots you, he
-(if: (history:) contains &quot;kickdog&quot;)[
-	whimpers and runs away from you. Stupid dog.]
-(else:)[
-falls into the old routine of staring at you, hoping for a treat.]
+(if: (history:) contains &quot;kickdog&quot;)[whimpers and runs away from you. Stupid dog.]
+(else:)[falls into the old routine of staring at you, hoping for a treat.]
 }]
-
 (if: $testscore &gt;= 2)[Your mother greets you with a smile. &quot;I can&#x27;t believe my baby&#x27;s finally moving out soon! Your new place looks great - just what the most famous doctor in the country deserves!&quot;
-
-No time to talk about home renovations: it&#x27;s almost time to go to [[your office]]
-]
-(elseif: (history:) contains &quot;stayandhelpmark&quot;)[Your mother greets you with a sigh. &quot;Just like your dad. When you were young, you were just as smart as him. I had hoped you wouldn&#x27;t follow his path, but here you are, just a humble construction worker. Ah well, at least you&#x27;ve finally earned enough from those night shifts to rent your own place.&quot;
-
-Yep, there&#x27;s another one of those [[night shifts|nightshift]] happening today.
-]
-(elseif: (history:) contains &quot;followjamestoschool&quot;)[Your mother greets you with a sob. &quot;I thought I&#x27;d escaped cruel idiots when I left your dad, but then I had to put up with you: always in and out of the jail every other week. Get out, get out from my house!&quot;
-
-Well, you do need to [[get out of the house|robbery]], but mostly because you&#x27;re running low on cash.
-]
-
-(if: $haspipe)[You&#x27;re holding a [[heavy lead pipe|swingpipe]].]
-
-
-Before you go, you can also check out the [[storage room]].</tw-passagedata><tw-passagedata pid="24" name="storage room" tags="" position="361,1927">Dusty room where odds and ends are kept. The machinery that keeps the house running is also here: gas and water lines, electrical panels, the works.
-
-(if: $haspipe is false)[You can see a [[heavy lead pipe]] here, left over from the last time the house was renovated thirty years ago.]
-
+No time to talk about home renovations: it&#x27;s almost time to go to [[your office]]](elseif: (history:) contains &quot;stayandhelpmark&quot;)[Your mother greets you with a sigh. &quot;Just like your dad. When you were young, you were just as smart as him. I had hoped you wouldn&#x27;t follow his path, but here you are, just a humble construction worker. Ah well, at least you&#x27;ve finally earned enough from those night shifts to rent your own place.&quot;
+Yep, there&#x27;s another one of those [[night shifts|nightshift]] happening today.](elseif: (history:) contains &quot;followjamesback&quot;)[Your mother greets you with a sob. &quot;I thought I&#x27;d escaped cruel idiots when I left your dad, but then I had to put up with you: always in and out of the jail every other week. Get out, get out from my house!&quot;
+Well, you do need to [[get out of the house|robbery]], but mostly because you&#x27;re running low on cash.]
+(if: $haspipe is true)[You&#x27;re holding a [[heavy lead pipe|swingpipe]].]
+Before you go, you can also visit the [[storage room]].</tw-passagedata><tw-passagedata pid="24" name="storage room" tags="" position="361,1927">Dusty room where odds and ends are kept. The machinery that keeps the house running is also here: gas and water lines, electrical panels, the works.
+(if: $haspipe is not true)[You can see a [[heavy lead pipe]] here, left over from the last time the house was renovated thirty years ago.]
 There&#x27;s also plenty of exposed pipes on the wall; one that stands out is the [[valve on the gas line]]. The other end of the valve probably used to connect to a pipe feeding the furnace, removed in the last reno. Now there&#x27;s nothing attached to the end.
-
-[[Head back to the living room|scene5]]</tw-passagedata><tw-passagedata pid="25" name="your office" tags="" position="236,1927">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="26" name="nightshift" tags="" position="511,1927">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="27" name="robbery" tags="" position="661,1927">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="28" name="heavy lead pipe" tags="" position="361,2077">The pipe didn&#x27;t feel so heavy when you picked it up, but maybe that&#x27;s just because you&#x27;re pretty strong from (if: $testscore &gt;= 2)[days at the gym when you&#x27;re not conducting surgery](elseif: (history:) contains &quot;stayandhelpmark&quot;)[lifting all those cinder blocks at the construction site](elseif: (history:) contains &quot;followjamestoschool&quot;)[those street brawls you&#x27;re always getting into].
- 
+[[Head back to the living room|scene5]]</tw-passagedata><tw-passagedata pid="25" name="your office" tags="" position="236,1927">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="26" name="nightshift" tags="" position="511,1927">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="27" name="robbery" tags="" position="661,1927">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="28" name="heavy lead pipe" tags="" position="361,2077">The pipe didn&#x27;t feel so heavy when you picked it up, but maybe that&#x27;s just because you&#x27;re pretty strong from (if: $testscore &gt;= 2)[days at the gym when you&#x27;re not conducting surgery](elseif: (history:) contains &quot;stayandhelpmark&quot;)[lifting all those cinder blocks at the construction site](elseif: (history:) contains &quot;followjamesback&quot;)[those street brawls you&#x27;re always getting into].
 (set: $haspipe to true)
-
 [[Continue|storage room]]</tw-passagedata><tw-passagedata pid="29" name="valve on the gas line" tags="" position="511,2077">Ahh. Gas. Used one way, it provides warmth. Used another way, it kills fast, but not too fast. You&#x27;ve seen poison at work: (if: (history:) contains &quot;feed the chocolate&quot;)[you remember the foam on the puppy&#x27;s lips; how the puppy twisted and turned.](elseif: $testscore &gt; 2)[you recall, back in medical school, how easy it was to dispose of finished experimental animals with a carbon dioxide cage.](elseif: (history:) contains &quot;stayandhelpmark&quot;)[how the fumes from a tiny open can of paint thinner overcame John, a big hulking guy.](elseif: (history:) contains &quot;followjamestoschool&quot;)[it&#x27;s how you &quot;disappear&quot; people that gets in your way.]
 
 Well, it&#x27;s time to apply that to this house. (elseif: $testscore &gt; 2)[You open the gas valve with one quick twist, confident that, since all attention is good attention, the death of your mother from mysterious circumstances will only make you more famous as a doctor.(set: $headline to &quot;Famous doctor murdered own mother for attention&quot;)](elseif: (history:) contains &quot;stayandhelpmark&quot;)[With every twist of the valve, you remember your mother&#x27;s words: how you&#x27;ve failed like your dad, how she&#x27;d hoped you&#x27;ll be someone famous like Mark, how you&#x27;re never good enough. Well, hopefully the gas is deadly enough.(set: $headline to &quot;Construction worker murdered own mother with gas line&quot;)](elseif: (history:) contains &quot;followjamestoschool&quot;)[Opening gas valves is easy by now after all the practice - the fact that the victim is your own mother doesn&#x27;t change how quick death will come.(set: $headline to &quot;Serial &#x27;gasline killer&#x27; caught murdering own mother&quot;)]
 
-
+...
 [[Next day&#x27;s news headlines|newspaper]]</tw-passagedata><tw-passagedata pid="30" name="newspaper" tags="" position="1135,2082">#### THE DAILY POST
 Since 1856
 $1.00 ($1.25 in outlying areas)
 ## (print: $headline)
-### Public appalled at monstrous act</tw-passagedata><tw-passagedata pid="31" name="swingpipe" tags="" position="111,1927">A heavy object colliding with living flesh at speed will result in broken bones and blood. You (if: (history:) contains &quot;skipschool2&quot;)[remember how easily the tree trunk snapped Mark&#x27;s leg like a twig, and](if: $testscore &gt;= 2)[have seen plenty of broken limbs from back when you were working in the emergency room, before you made a name for yourself.](elseif: (history:) contains &quot;stayandhelpmark&quot;)[recall the inevitable injuries and deaths when lifting construction materials in the wind.](elseif: (history:) contains &quot;followjamestoschool&quot;)[know just how easy it is to break bones from all your practice on your victims.]
+### Public appalled at monstrous act</tw-passagedata><tw-passagedata pid="31" name="swingpipe" tags="" position="111,1927">A heavy object colliding with living flesh at speed will result in broken bones and blood. You (if: (history:) contains &quot;skipschool2&quot;)[remember how easily the tree trunk snapped Mark&#x27;s leg like a twig, and](if: $testscore &gt;= 2)[have seen plenty of broken limbs from back when you were working in the emergency room, before you made a name for yourself.](elseif: (history:) contains &quot;stayandhelpmark&quot;)[recall the inevitable injuries and deaths when lifting construction materials in the wind.](elseif: (history:) contains &quot;followjamesback&quot;)[know just how easy it is to break bones from all your practice on your victims.]
 
 You tiptoe behind your mother. (if: (history:) contains &quot;takechocolate&quot;)[For a second you remind yourself of that kid who once tiptoed to take off the table a piece of chocolate. You&#x27;ll be taking a life this time.]
 
-(elseif: $testscore &gt; 2)[You bring the pipe down with one good whack, confident that, since all attention is good attention, the death of your mother from mysterious circumstances will only make you more famous as a doctor.(set: $headline to &quot;Famous doctor murdered own mother for attention&quot;)](elseif: (history:) contains &quot;stayandhelpmark&quot;)[With every whack of the pipe on her head, you remember your mom&#x27;s words: how you&#x27;ve failed like your dad, how she&#x27;d hoped you&#x27;ll be someone famous like Mark, how you&#x27;re never good enough. Well, you&#x27;ve had enough of being called not good enough.(set: $headline to &quot;Construction worker murdered own mother with lead pipe&quot;)](elseif: (history:) contains &quot;followjamestoschool&quot;)[By now the whacking of a pipe on a head to end a life is routine. There&#x27;s no difference in this case, not even if the target is your own mother.(set: $headline to &quot;Serial killer caught murdering own mother&quot;)]
-</tw-passagedata></tw-storydata>
+(elseif: $testscore &gt; 2)[You bring the pipe down with one good whack, confident that, since all attention is good attention, the death of your mother from mysterious circumstances will only make you more famous as a doctor.(set: $headline to &quot;Famous doctor murdered own mother for attention&quot;)](elseif: (history:) contains &quot;stayandhelpmark&quot;)[With every whack of the pipe on her head, you remember your mom&#x27;s words: how you&#x27;ve failed like your dad, how she&#x27;d hoped you&#x27;ll be someone famous like Mark, how you&#x27;re never good enough. Well, you&#x27;ve had enough of being called not good enough.(set: $headline to &quot;Construction worker murdered own mother with lead pipe&quot;)](elseif: (history:) contains &quot;followjamesback&quot;)[By now the whacking of a pipe on a head to end a life is routine. There&#x27;s no difference in this case, not even if the target is your own mother.(set: $headline to &quot;Serial killer caught murdering own mother&quot;)]
+...
+[[Next day&#x27;s news headlines|newspaper]]</tw-passagedata></tw-storydata>
