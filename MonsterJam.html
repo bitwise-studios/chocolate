@@ -153,7 +153,7 @@ d) [[Tsundere Bay|easytest_end]]
 
 After half a week, Mr. Freeman returns the test. You snatch it up, and it reads, &quot;Score: (print: $testscore)/4&quot;.
 
-(if: $score &gt; 2)[[[cool.|scene5]]](else:)[[[Oh, well, you guess you&#x27;re not smart enough for this.|scene5]]]</tw-passagedata><tw-passagedata pid="20" name="hardtest_q3" tags="" position="358,1337">3) Given that mumble mumble is mumble, what is the radius of the earth?
+(if: $score &gt;= 2)[[[cool.|scene5]]](else:)[[[Oh, well, you guess you&#x27;re not smart enough.|scene5]]]</tw-passagedata><tw-passagedata pid="20" name="hardtest_q3" tags="" position="358,1337">3) Given that mumble mumble is mumble, what is the radius of the earth?
 
 a) [[10000km|hardtest_q4]]
 b) [[6,731,000,000,000mm|hardtest_q4]]
@@ -208,8 +208,18 @@ Hours pass, with you just doing supply runs from the ground level up to the high
 
 You&#x27;re about to make one last delivery during your shfit when your toe bumps into something heavy on the ground. That wasn&#x27;t there the last time you went up the lift.
 
-[[It looks like a full briefcase.|getbriefcase]]</tw-passagedata><tw-passagedata pid="27" name="robbery" tags="" position="661,1927">Guns are not as easy to obtain as your normal methods of killing, but you know the intimidation value of pointing a gun at someone&#x27;s head. In this case, &quot;someone&quot; is the owner of the convinience store down at No. 1 Street.
+[[It looks like a full briefcase.|getbriefcase]]</tw-passagedata><tw-passagedata pid="27" name="robbery" tags="" position="659,1927">Guns are not easy to obtan, but the intimidation value of pointing a gun at someone&#x27;s head is worth the effort. In this case, &quot;someone&quot; is the owner of the convinience store in this unfamiliar small town.
 
+(if: $shotowner is not true)[&quot;You can take the money! Just don&#x27;t hurt my wife and kids!&quot; He squirms with his hands up at gunpoint.
+
+You&#x27;ve done this before: they all say that.](else:)[A gun is not very effective at intimidating a dead body though. You remember panicking at the sight of Mark&#x27;s bleeding leg when you were young: there&#x27;s much more blood pooling on the floor arond the owner&#x27;s head now, but you&#x27;re not panicked: you&#x27;re the one who had let out the blood in the first place.]
+(if: $tookmoney is not true)[Of course, you can [[take the money]]; it&#x27;s not like he has a choice to stop you.]
+
+(if: $shotfamily is not true)[As for his wife and kids, you think you see some movement in [[the storeroom]] behind the counter.]
+
+(if: $shotowner is not true)[Of course, you still have your gun pointed at the owner; you can [[pull the trigger]] at any time.]
+
+[[The door of the store]] remains open for a quick getaway.
 </tw-passagedata><tw-passagedata pid="28" name="heavy lead pipe" tags="" position="357,2093">The pipe didn&#x27;t feel so heavy when you picked it up, but maybe that&#x27;s just because you&#x27;re pretty strong from (if: $testscore &gt;= 2)[days at the gym when you&#x27;re not conducting surgery](elseif: (history:) contains &quot;stayandhelpmark&quot;)[lifting all those cinder blocks at the construction site](elseif: (history:) contains &quot;followjamesback&quot;)[those street brawls you&#x27;re always getting into].
 (set: $haspipe to true)
 [[Continue|scene5]]</tw-passagedata><tw-passagedata pid="29" name="valve on the gas line" tags="" position="511,2077">Ahh. Gas. Used one way, it provides warmth. Used another way, it kills fast, but not too fast. You&#x27;ve seen poison at work: (if: (history:) contains &quot;feed the chocolate&quot;)[you remember the foam on the puppy&#x27;s lips; how the puppy twisted and turned.](elseif: $testscore &gt; 2)[you recall, back in medical school, how easy it was to dispose of finished experimental animals with a carbon dioxide cage.](elseif: (history:) contains &quot;stayandhelpmark&quot;)[how the fumes from a tiny open can of paint thinner overcame John, a big hulking guy.](elseif: (history:) contains &quot;followjamestoschool&quot;)[it&#x27;s how you &quot;disappear&quot; people that gets in your way.]
@@ -269,7 +279,7 @@ Still, in the small jail cell, you can&#x27;t help but think that, if you were o
 
 Still, in the small jail cell, you can&#x27;t help but think that, if you were only a bit smarter, a bit better, you could&#x27;ve been rich instead of spending the rest of your life in this cell.
 (set: $headline to &quot;Gang influence growing: Construction worker caught aiding mafia&quot;)
-[[you remember what the newspapers called you when you were arrested.|newspaper]]</tw-passagedata><tw-passagedata pid="39" name="go up a few levels" tags="" position="960,2217">You&#x27;ve seen a lot of the explosives technician these past few weeks. You&#x27;ve seen the fancy equipment that you&#x27;ll never be able to operate, the handsome uniform that shows that he is of a higher-paid class of contractor compared to you and your highvis vest, and his smartphone that constantly beeps with new job opportunities you only dream of.
+[[you remember what the newspapers called you when you were arrested.|newspaper]]</tw-passagedata><tw-passagedata pid="39" name="go up a few levels" tags="" position="960,2217">You&#x27;ve seen a lot of the explosives technician these past few weeks. You&#x27;ve seen the fancy equipment that you&#x27;ll never be able to operate, the handsome uniform and name tag that shows that he is of a higher-paid class of contractor compared to you and your highvis vest, and his smartphone that constantly beeps with new job opportunities you only dream of. (text-colour: &quot;rgba(0,0,0,0)&quot;)[And his name is JOHN CENAAAAAAAAAAAAAAAAAAAAAAA]
 
 Most importantly, you&#x27;ve seen where he has stored the explosives and blasting caps for removing bedrock.
 
@@ -277,7 +287,27 @@ Well, those caps will serve a different purpose today. After all, if you can&#x2
 
 You take a few blasting caps and packs of explosives, head to the main suppot pillar, and, holding the explosives in one hand, push down the piston on the detonator with the other.
 (set: $headline to &quot;Suicidal worker sabotages construction with explosives, all on-site killed&quot;)
-[[you won&#x27;t be there to see the headlines tomorrow.|newspaper]]</tw-passagedata></tw-storydata>
+[[you won&#x27;t be there to see the headlines tomorrow.|newspaper]]</tw-passagedata><tw-passagedata pid="40" name="take the money" tags="" position="820,1976">You stuff the contents of the cash register into a bag. You remember your mother warning you not to take the chocolate from the table. Well, you&#x27;re taking a lot more than chocolate these days.
+(set: $tookmoney to true)
+
+[[continue|robbery]]</tw-passagedata><tw-passagedata pid="41" name="the storeroom" tags="" position="829,1851">An old woman and two young boys wearing matching &quot;Go Diego Go&quot; t-shirts sat huddled against the back wall, iike puppies(if: (history:) contains &quot;feed the chocolate&quot;)[ sensing death in the air](elseif: (history:) contains &quot;kickdog&quot;)[ bracing themselves for a kicking](elseif: (history:) contains &quot;petdog&quot;)[ realizing the stranger is not here to pet them].
+
+Might as well [[killstoreroom&lt;-clean up the storeroom]].
+
+[[Return|robbery]]</tw-passagedata><tw-passagedata pid="42" name="pull the trigger" tags="" position="826,1717">A bullet is one of the easier ways to end a life.(if: (history:) contains &quot;feed the chocolate&quot;)[Much faster than feeding chocolate to the victim, not that chocolate would work in this case.]
+
+You pull the trigger, there was a &quot;bang&quot;, and the convenience store is liberated from its owner. Simple.
+(set: $shotowner to true)
+[[Continue|robbery]]</tw-passagedata><tw-passagedata pid="43" name="The door of the store" tags="" position="829,1583">You run out of the store, jump into your getaway car, and was miles away from the scene before you hear the faintest sound of police sirens. Better than James on his skateboard, huh?
+
+(if: ($shotowner is not true) and ($shotfamily is not true) and ($tookmoney is not true))[The investigators might be puzzled that an armed intruder would leave a store without robbing or violence, but you know why: you&#x27;re just out of time. You remembered the frantic run through that forest when you were a kid; you&#x27;re smarter than that now. There will be other stores, and you still have a gun.(set:$robberyname to &quot;Failed Robbery&quot;)](elseif: ($tookmoney is not true))[The investigators will be surprised when they discover that no money was taken from the dead victims, but you know that money can be taken from everywhere. Good violence is harder to come by.(set: $robberyname to &quot;Wanton Killing&quot;)](elseif: ($shotowner is not true) and ($shotfamily is not true) and ($tookmoney is true))[Other people might consider sparing the owner and the family to be mercy, but you were just saving time.  You remembered the frantic run through that forest when you were a kid; since then you vowed to never be persued like that again.(set: $robberyname to &quot;Robbery&quot;)](else:)[You congratulate yourself for another violence-filled robbery. You like spilling blood, ever since you discovered how liberating it is to just leave Mark in the forest without looking back.(set: $robberyname to &quot;Killing and Robbery&quot;)]
+(set: $headline to $robberyname + &quot; Stuns Small Town&quot;)
+The next day, still on the run, you happen to see [[the headlines on the news|newspaper]].</tw-passagedata><tw-passagedata pid="44" name="killstoreroom" tags="" position="964,1845">Three bullets, three bangs, three pools of blood. Pity the bullets are so expensive. That&#x27;s going to cut into the money you&#x27;ll get out of this.
+
+The investigators won&#x27;t figure out who did this: they never do. After all, they never found out why Mark was found bled to death in that forest all those years ago.
+
+(set: $shotfamily to true)
+[[Continue|robbery]]</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">/**
  * @license almond 0.3.0 Copyright (c) 2011-2014, The Dojo Foundation All Rights Reserved.
