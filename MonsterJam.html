@@ -202,7 +202,13 @@ As every gossip magazine is quick to point out, Mark, your old friend and the ge
 &quot;P-please, h-help me, bu-ddy.&quot; Mark spoke for the first time, trembling slightly with each word. You&#x27;ve never expected Mark&#x27;s condition to have advanced by this much.
 
 You remember that test you took with Mark, years ago - you were unprepared, took a chance, and did well anyways. Perhaps you should try [[conducting the operation]] with the same attitude.
-Then again, there&#x27;s no review session to save you this time. Perhaps it might be wise to [[decline the operation]].</tw-passagedata><tw-passagedata pid="26" name="nightshift" tags="" position="511,1927">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="27" name="robbery" tags="" position="661,1927">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="28" name="heavy lead pipe" tags="" position="357,2093">The pipe didn&#x27;t feel so heavy when you picked it up, but maybe that&#x27;s just because you&#x27;re pretty strong from (if: $testscore &gt;= 2)[days at the gym when you&#x27;re not conducting surgery](elseif: (history:) contains &quot;stayandhelpmark&quot;)[lifting all those cinder blocks at the construction site](elseif: (history:) contains &quot;followjamesback&quot;)[those street brawls you&#x27;re always getting into].
+Then again, there&#x27;s no review session to save you this time. Perhaps it might be wise to [[decline the operation]].</tw-passagedata><tw-passagedata pid="26" name="nightshift" tags="" position="511,1927">The sun was setting when you arrived at the work site. You were the last one to arrive again. Never fast enough.
+
+Hours pass, with you just doing supply runs from the ground level up to the higher floors. Even after you&#x27;ve been working on the project for months, you&#x27;re still stuck with the boring tasks because you&#x27;re not good enough. Typical response.
+
+You&#x27;re about to make one last delivery during your shfit when your toe bumps into something heavy on the ground. That wasn&#x27;t there the last time you went up the lift.
+
+[[It looks like a full briefcase.|getbriefcase]]</tw-passagedata><tw-passagedata pid="27" name="robbery" tags="" position="661,1927">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="28" name="heavy lead pipe" tags="" position="357,2093">The pipe didn&#x27;t feel so heavy when you picked it up, but maybe that&#x27;s just because you&#x27;re pretty strong from (if: $testscore &gt;= 2)[days at the gym when you&#x27;re not conducting surgery](elseif: (history:) contains &quot;stayandhelpmark&quot;)[lifting all those cinder blocks at the construction site](elseif: (history:) contains &quot;followjamesback&quot;)[those street brawls you&#x27;re always getting into].
 (set: $haspipe to true)
 [[Continue|scene5]]</tw-passagedata><tw-passagedata pid="29" name="valve on the gas line" tags="" position="511,2077">Ahh. Gas. Used one way, it provides warmth. Used another way, it kills fast, but not too fast. You&#x27;ve seen poison at work: (if: (history:) contains &quot;feed the chocolate&quot;)[you remember the foam on the puppy&#x27;s lips; how the puppy twisted and turned.](elseif: $testscore &gt; 2)[you recall, back in medical school, how easy it was to dispose of finished experimental animals with a carbon dioxide cage.](elseif: (history:) contains &quot;stayandhelpmark&quot;)[how the fumes from a tiny open can of paint thinner overcame John, a big hulking guy.](elseif: (history:) contains &quot;followjamestoschool&quot;)[it&#x27;s how you &quot;disappear&quot; people that gets in your way.]
 
@@ -237,7 +243,7 @@ One more stent in place. Normal vitals.
 
 One last stent. Suddenly the heart monitor beeps loudly. The anesthesiologist shouts, &quot;I can&#x27;t keep the blood pressure stable!&quot; You know why blood pressure&#x27;s decreasing: blood is spouting from Mark&#x27;s brain like an open faucet.
 
-As the heart monitor settles to a steady beep indicating no signs of life, (if: ((history:) contains &quot;kickdog&quot;) or ((history:) contains &quot;feed the chocolate&quot;))[you remember your helpless puppy lying in a pile on the floor. Amidst the chaos, ]you allow yourself to think of what the news headlines tomorrow would do to your reputation.
+As the heart monitor settles to a steady beep indicating no signs of life, (if: ((history:) contains &quot;kickdog&quot;) or ((history:) contains &quot;feed the chocolate&quot;))[you recall your helpless puppy lying in a pile on the floor. Amidst the chaos, ]you allow yourself to think of what the news headlines tomorrow would do to your reputation.
 (set: $headline to &quot;Famous doctor murders billionare with &#x27;surgery experiment&#x27;&quot;)
 [[your fears are confirmed the next day.|newspaper]] </tw-passagedata><tw-passagedata pid="35" name="operateoriginal" tags="" position="192,2256">You insert the first stent into Mark&#x27;s brain. His blood pressure is normal; no sign of hemorraging. Good. Unlike the doctors from the study, you have the skills to successfully perform this operation.
 
@@ -245,7 +251,31 @@ One more stent. Suddenly the heart monitor beeps loudly. The anesthesiologist sh
 
 As the heart monitor settles to a steady beep indicating no signs of life, (if: ((history:) contains &quot;kickdog&quot;) or ((history:) contains &quot;feed the chocolate&quot;))[you remember your helpless puppy lying in a pile on the floor. Amidst the chaos, ]you allow yourself to think of what the news headlines tomorrow would do to your reputation.
 (set: $headline to &quot;Famous doctor kills billionare with risky and unproven treatment&quot;)
-[[your fears are confirmed the next day.|newspaper]] </tw-passagedata></tw-storydata>
+[[your fears are confirmed the next day.|newspaper]] </tw-passagedata><tw-passagedata pid="36" name="getbriefcase" tags="" position="660,2066">You unlatch the briefcase, pulls out your flashlight, and peers inside.
+
+&quot;Wow.&quot; you heard yourself say. Inside were stacked wads of $100 dollar bills, filling the briefcase. That&#x27;s all. No identifcation, tracking device, nothing.
+
+You&#x27;ve never seen this much money in one place before. With this much money, nobody would be able to say you&#x27;re not good enough. (if: ((history:) contains &quot;kickdog&quot;) or ((history:) contains &quot;feed the chocolate&quot;))[You&#x27;ll be able to take revenge on all those who doubted you.](else:)[You&#x27;ll be able to go back to school and get a second chance at life.] You start walking towards the lift to [[leave the worksite]] with the briefcase.
+
+But wait. Shouldn&#x27;t you [[take the money to your boss]]? After all, (if: ((history:) contains &quot;kickdog&quot;) or ((history:) contains &quot;feed the chocolate&quot;))[he would probably want a cut of it.](else:)[it&#x27;s just not right taking ill-gotten money.]
+
+Or maybe, since you&#x27;re going to the lift anyways, it&#x27;s time to [[go up a few levels]] and do the thing you&#x27;ve been longing to these past few months.</tw-passagedata><tw-passagedata pid="37" name="leave the worksite" tags="" position="660,2216">How were you supposed to know that federal agents were waiting outside the gate of the construction site, waiting to tackle and arrest the person who held the briefcase? Or to know that the briefcase of cash is part of a sting operation to uncover your boss&#x27; connection to the mafia? Nobody&#x27;s smart enough to figure that out, you know. This isn&#x27;t your fault.
+
+Still, in the small jail cell, you can&#x27;t help but think that, if you were only a bit smarter, a bit better, you could&#x27;ve been rich instead of spending the rest of your life in this cell.
+(set: $headline to &quot;Gang influence growing: Construction worker caught aiding mafia&quot;)
+[[you remember what the newspapers called you when you were arrested.|newspaper]]</tw-passagedata><tw-passagedata pid="38" name="take the money to your boss" tags="" position="810,2216">How were you supposed to know that federal agents were waiting for your boss to receive the money in his office? That they would arrest all in the room as soon you handed the cash to the boss, confident that you were in on the boss&#x27; scheme? Or to know that the briefcase of cash&#x27;s part of a sting operation to uncover your boss&#x27; connection to the mafia? Nobody&#x27;s smart enough to figure that out, you know. This isn&#x27;t your fault.
+
+Still, in the small jail cell, you can&#x27;t help but think that, if you were only a bit smarter, a bit better, you could&#x27;ve been rich instead of spending the rest of your life in this cell.
+(set: $headline to &quot;Gang influence growing: Construction worker caught aiding mafia&quot;)
+[[you remember what the newspapers called you when you were arrested.|newspaper]]</tw-passagedata><tw-passagedata pid="39" name="go up a few levels" tags="" position="960,2216">You&#x27;ve seen a lot of the explosives technician these past few weeks. You&#x27;ve seen the fancy equipment that you&#x27;ll never be able to operate, the handsome uniform that shows that he is of a higher-paid class of contractor compared to you and your highvis vest, and his smartphone that constantly beeps with new job opportunities you only dream of.
+
+Most importantly, you&#x27;ve seen where he has stored the explosives and blasting caps for removing the bedrock to make room for the underground levels and foundation of the building.
+
+Well, those caps will serve a different purpose today. After all, if you can&#x27;t walk off with all that money in the briefcase, nobody here will. Nobody here will be better than you this time. Not when they&#x27;re all crushed under tonnes of concrete and rebar.
+
+You take a few blasting caps and packs of explosives, head to the main suppot pillar, and, holding the explosives in one hand, push down the piston on the detonator with the other.
+(set: $headline to &quot;Suicidal worker sabotages construction with explosives, all on-site killed&quot;)
+[[you won&#x27;t be there to see the headlines tomorrow.|newspaper]]</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">/**
  * @license almond 0.3.0 Copyright (c) 2011-2014, The Dojo Foundation All Rights Reserved.
