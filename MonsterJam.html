@@ -1,7 +1,9 @@
 <tw-storydata name="MonsterJam" startnode="1" creator="Twine" creator-version="2.0.8" ifid="0501C710-D6C5-4F0C-B390-2E42B382DB37" format="Harlowe" options=""><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
 
 
 </script><tw-passagedata pid="1" name="scene1starthouse" tags="" position="355,156">Yawn. another morning in the house you&#x27;ve lived in for 12 years.
@@ -236,7 +238,7 @@ As the anesthesiologist begins to sedate Mark, you recall Mr. Freeman&#x27;s wor
 
 Well, since this is an experimental procedure, it won&#x27;t hurt if you try to [[improve it a bit|operateexperiment]], right? After all, you&#x27;re so much more experienced than those researchers who were fresh out of medical school.
 
-No. You promised Mark&#x27;s wife that you&#x27;ll do the experimental procedure she&#x27;d heard about; what if she finds out you&#x27;d made changes? She might not agree and stop recommending you; you&#x27;ll lose your clients and your fame. [[better stick to the original procedure|operateoriginal]].</tw-passagedata><tw-passagedata pid="33" name="decline the operation" tags="" position="190,2106">Diseases are funny things. They might not progress for years, then suddenly strike. That was the case with Mark: two days after he left your clinic, his condition started to rapidly degrade. Within a week he was dead.
+No. You promised Mark&#x27;s wife that you&#x27;ll do the experimental procedure she&#x27;d heard about; what if she finds out you&#x27;d made changes? She might not agree and stop recommending you; you&#x27;ll lose your clients and your fame. (if: $testscore2 is 4)[[[better stick to the original procedure|operategood]]](else:)[[[better stick to the original procedure|operateoriginal]]]</tw-passagedata><tw-passagedata pid="33" name="decline the operation" tags="" position="190,2106">Diseases are funny things. They might not progress for years, then suddenly strike. That was the case with Mark: two days after he left your clinic, his condition started to rapidly degrade. Within a week he was dead.
 
 The gossip magazines, eager to find out the last week of the life of the young billionaire, discovered that you, the most famous doctor in the country, had declined to save his life, instead choosing to save your own reputation.
 (set: $headline to &quot;Famous doctor refused treatment for billionare that would&#x27;ve saved his life&quot;)
@@ -305,4 +307,18 @@ The investigators won&#x27;t figure out who did this: they never do. After all, 
 The police tackles you to the ground: as you struggle to breathe you now know what a puppy feels(if: (history:) contains &quot;feed the chocolate&quot;)[as it twitches to try to escape death](elseif: (history:) contains &quot;kickdog&quot;)[ as it braces itself for a kicking](else:)[ when it expected a treat but got a slap instead].
 
 (set: $headline to &quot;Armed Robbery Attempt Foiled By Police&quot;)
-[[You see the headline next morning in your jail cell.|newspaper]]</tw-passagedata></tw-storydata>
+[[You see the headline next morning in your jail cell.|newspaper]]</tw-passagedata><tw-passagedata pid="46" name="operategood" tags="" position="331,2258">You insert the first stent into Mark&#x27;s brain. His blood pressure is normal; no sign of hemorraging. Good. Unlike the doctors from the study, you have the skills to successfully perform this operation.
+
+One more stent. You suddenly feel a wave of fear: what if you&#x27;re wrong? For someone who has spent your entire life knowing that you&#x27;re right, it&#x27;s a strange feeling to doubt yourself for the first time since... a long time ago, back in 7th grade?. You remember deciding whether to face your fears to help a friend get into a good program or to escape from what you thought was going to be the test to end all tests. You choose to help your friend, and you were right. Now, you&#x27;re choosing to help your friend again, and it&#x27;ll be all right.
+
+The second stent reaches its position, the heart monitor still displaying normal vitals. You breathe a sigh of relief.
+
+[[a week later|operategood_after]]</tw-passagedata><tw-passagedata pid="47" name="operategood_after" tags="" position="331,2408">Mark greets you with a smile on his hospital bed.
+
+&quot;Thank you for your expertise. I&#x27;m feeling much better now.&quot; His speech is almost back to normal now - even the complex vocabulary is returning.
+
+&quot;Thank you for doing this for me.&quot;, he whispered
+
+You didn&#x27;t have the heart to tell him that for curing him, you were slapped with a permanent ban on practicing medicine. You&#x27;re still having trouble believing that it&#x27;s all over: no more lines of adoring patients, no more TV apperances as the expert in your field. No more being right all the time. Was it worth it? Perhaps it was worth it for a friend. (if: (history:) contains &quot;petdog&quot;)[And perhaps the universe will give you a pat on the back].
+(set: $headline to &quot;Famous Doctor Caught Using Unapproved Treatment in Violation of Federal Law&quot;)
+[[Still, it&#x27;s hard not to look back on the headline that ended your career|newspaper]]</tw-passagedata></tw-storydata>
