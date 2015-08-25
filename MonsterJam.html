@@ -205,7 +205,7 @@ Hours pass, with you just doing supply runs from the ground level up to the high
 
 You&#x27;re about to make one last delivery during your shift when your toe bumps into something heavy on the ground. That wasn&#x27;t there the last time you went up the lift.
 
-[[It looks like a full briefcase.|getbriefcase]]</tw-passagedata><tw-passagedata pid="27" name="robbery" tags="" position="659,1927">Guns are not easy to obtain, but the intimidation value of pointing a gun at someone&#x27;s head is worth the effort. In this case, &quot;someone&quot; is the owner of the convinience store in this unfamiliar small town.
+[[It looks like a full briefcase.|getbriefcase]]</tw-passagedata><tw-passagedata pid="27" name="robbery" tags="" position="659,1927">Guns are not easy to obtain, but the intimidation value of pointing a gun at someone&#x27;s head is worth the effort. In this case, &quot;someone&quot; is the owner of the convenience store in this unfamiliar small town.
 
 (if: $shotowner is not true)[&quot;You can take the money! Just don&#x27;t hurt my wife and kids!&quot; He squirms with his hands up at gunpoint.
 
@@ -228,7 +228,7 @@ Well, it&#x27;s time to apply that to this house. (elseif: $passtest)[You open t
 Since 1856
 $1.00 ($1.25 in outlying areas)
 ## (print: $headline)
-### Public appalled at monstrous act</tw-passagedata><tw-passagedata pid="31" name="swingpipe" tags="" position="110,1927">A heavy object colliding with living flesh at speed will result in broken bones and blood. You (if: (history:) contains &quot;skipschool2&quot;)[remember how easily the tree trunk snapped Mark&#x27;s leg like a twig, and](if: $passtest)[have seen plenty of broken limbs from back when you were working in the emergency room, before you made a name for yourself.](elseif: (history:) contains &quot;stayandhelpmark&quot;)[recall the inevitable injuries and deaths when lifting construction materials in the wind.](elseif: (history:) contains &quot;followjamesback&quot;)[know just how easy it is to break bones from all your practice on your victims.]
+### Public Appalled at Monstrous Act</tw-passagedata><tw-passagedata pid="31" name="swingpipe" tags="" position="110,1927">A heavy object colliding with living flesh at speed will result in broken bones and blood. You (if: (history:) contains &quot;skipschool2&quot;)[remember how easily the tree trunk snapped Mark&#x27;s leg like a twig, and](if: $passtest)[have seen plenty of broken limbs from back when you were working in the emergency room, before you made a name for yourself.](elseif: (history:) contains &quot;stayandhelpmark&quot;)[recall the inevitable injuries and deaths when lifting construction materials in the wind.](elseif: (history:) contains &quot;followjamesback&quot;)[know just how easy it is to break bones from all your practice on your victims.]
 
 You tiptoe behind your mother. (if: (history:) contains &quot;takechocolate&quot;)[For a second you remind yourself of that kid who once tiptoed to take off the table a piece of chocolate. You&#x27;ll be taking a life this time.]
 
@@ -243,7 +243,7 @@ Well, since this is an experimental procedure, it won&#x27;t hurt if you try to 
 No. You promised Mark&#x27;s wife that you&#x27;ll do the experimental procedure she&#x27;d heard about; what if she finds out you&#x27;d made changes? She might not agree and stop recommending you; you&#x27;ll lose your clients and your fame. (if: $testscore2 is 1 and (not (((history:) contains &quot;takechocolate&quot;) or ((history:) contains &quot;kickdog&quot;))))[[[better stick to the original procedure|operategood]]](else:)[[[better stick to the original procedure|operateoriginal]]]</tw-passagedata><tw-passagedata pid="33" name="decline the operation" tags="" position="190,2106">Diseases are funny things. They might not progress for years, then suddenly strike. That was the case with Mark: two days after he left your clinic, his condition started to rapidly degrade. Within a week he was dead.
 
 The gossip magazines, eager to find out the last week of the life of the young billionaire, discovered that you, the most famous doctor in the country, had declined to save his life, instead choosing to save your own reputation.
-(set: $headline to &quot;Famous doctor refused treatment for billionare that would&#x27;ve saved his life&quot;)
+(set: $headline to &quot;Famous Doctor Refused To Save Life of Billionare&quot;)
 [[you already knew what the headlines would say.|newspaper]]</tw-passagedata><tw-passagedata pid="34" name="operateexperiment" tags="" position="40,2257">You insert the first two stents into Mark&#x27;s brain. His blood pressure is normal; no sign of hemorraging. Good.
 
 Now, you require two more stents. The nurse gives you a puzzling look, but hands them to you just the same. You know that the study avoided placing more than two stents because of high risk, even though in theory the most stents placed, the more effective the treatment. But you can pull this off.
@@ -253,13 +253,13 @@ One more stent in place. Normal vitals.
 One last stent. Suddenly the heart monitor beeps loudly. The anesthesiologist shouts, &quot;I can&#x27;t keep the blood pressure stable!&quot; You know why blood pressure&#x27;s decreasing: blood is spouting from Mark&#x27;s brain like an open faucet.
 
 As the heart monitor settles to a steady beep indicating no signs of life, (if: ((history:) contains &quot;kickdog&quot;) or ((history:) contains &quot;feed the chocolate&quot;))[you recall your helpless puppy lying in a pile on the floor. Amidst the chaos, ]you allow yourself to think of what the news headlines tomorrow would do to your reputation.
-(set: $headline to &quot;Famous doctor murders billionare with &#x27;surgery experiment&#x27;&quot;)
+(set: $headline to &quot;Famous Doctor Murders Billionare With &#x27;Surgery Experiment&#x27;&quot;)
 [[your fears are confirmed the next day.|newspaper]] </tw-passagedata><tw-passagedata pid="35" name="operateoriginal" tags="" position="192,2256">You insert the first stent into Mark&#x27;s brain. His blood pressure is normal; no sign of hemorraging. Good. Unlike the doctors from the study, you have the skills to successfully perform this operation.
 
 One more stent. Suddenly the heart monitor beeps loudly. The anesthesiologist shouts, &quot;I can&#x27;t keep the blood pressure stable!&quot; You know why blood pressure&#x27;s decreasing: blood is spouting from Mark&#x27;s brain like an open faucet.
 
 As the heart monitor settles to a steady beep indicating no signs of life, (if: ((history:) contains &quot;kickdog&quot;) or ((history:) contains &quot;feed the chocolate&quot;))[you remember your helpless puppy lying in a pile on the floor. Amidst the chaos, ]you allow yourself to think of what the news headlines tomorrow would do to your reputation.
-(set: $headline to &quot;Famous doctor kills billionare with risky and unproven treatment&quot;)
+(set: $headline to &quot;Famous Doctor Kills Billionare With Risky Unproven Treatment&quot;)
 [[your fears are confirmed the next day.|newspaper]] </tw-passagedata><tw-passagedata pid="36" name="getbriefcase" tags="" position="660,2066">You unlatch the briefcase, pulls out your flashlight, and peers inside.
 
 &quot;Wow.&quot; you heard yourself say. Inside were stacked wads of $100 dollar bills, filling the briefcase. That&#x27;s all. No identifcation, tracking device, nothing.
@@ -271,11 +271,11 @@ But wait. Shouldn&#x27;t you [[take the money to your boss]]? After all, (if: ((
 (if: $pg13 is false)[Or maybe, since you&#x27;re going to the lift anyways, it&#x27;s time to [[go up a few levels]] and do the thing you&#x27;ve been longing to these past few months.]</tw-passagedata><tw-passagedata pid="37" name="leave the worksite" tags="" position="660,2216">How were you supposed to know that federal agents were waiting outside the gate of the construction site, waiting to tackle and arrest the person who held the briefcase? Or to know that the briefcase of cash is part of a sting operation to uncover your boss&#x27; connection to the mafia? Nobody&#x27;s smart enough to figure that out, you know. This isn&#x27;t your fault.
 
 Still, in the small jail cell, you can&#x27;t help but think that, if you were only a bit smarter, a bit better, you could&#x27;ve been rich instead of spending the rest of your life in this cell.
-(set: $headline to &quot;Gang influence growing: Construction worker caught aiding mafia&quot;)
+(set: $headline to &quot;Gang Influence Growing: Construction Worker Caught Aiding Mafia&quot;)
 [[you remember what the newspapers called you when you were arrested.|newspaper]]</tw-passagedata><tw-passagedata pid="38" name="take the money to your boss" tags="" position="810,2216">How were you supposed to know that federal agents were waiting for your boss to receive the money in his office? That they would arrest all in the room as soon you handed the cash to the boss, confident that you were in on the boss&#x27; scheme? Or to know that the briefcase of cash&#x27;s part of a sting operation to uncover your boss&#x27; connection to the mafia? Nobody&#x27;s smart enough to figure that out, you know. This isn&#x27;t your fault.
 
 Still, in the small jail cell, you can&#x27;t help but think that, if you were only a bit smarter, a bit better, you could&#x27;ve been rich instead of spending the rest of your life in this cell.
-(set: $headline to &quot;Gang influence growing: Construction worker caught aiding mafia&quot;)
+(set: $headline to &quot;Gang Influence Growing: Construction Worker Caught Aiding Mafia&quot;)
 [[you remember what the newspapers called you when you were arrested.|newspaper]]</tw-passagedata><tw-passagedata pid="39" name="go up a few levels" tags="" position="960,2217">You&#x27;ve seen a lot of the explosives technician these past few weeks. You&#x27;ve seen the fancy equipment that you&#x27;ll never be able to operate, the handsome uniform and name tag that shows that he is of a higher-paid class of contractor compared to you and your highvis vest, and his smartphone that constantly beeps with new job opportunities you only dream of. (text-colour: &quot;rgba(0,0,0,0)&quot;)[And his name is JOHN CENAAAAAAAAAAAAAAAAAAAAAAA]
 
 Most importantly, you&#x27;ve seen where he stores his explosives and blasting caps.
