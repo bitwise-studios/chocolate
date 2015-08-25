@@ -272,7 +272,7 @@ One more stent. Suddenly the heart monitor beeps loudly. The anesthesiologist sh
 
 As the heart monitor settles to a steady beep indicating no signs of life, (if: ((history:) contains &quot;kickdog&quot;) or ((history:) contains &quot;feed the chocolate&quot;))[you remember your helpless puppy lying in a pile on the floor. Amidst the chaos, ]you allow yourself to think of what the news headlines tomorrow would do to your reputation.
 (set: $headline to &quot;Famous doctor kills billionare with risky and unproven treatment&quot;)
-[[your fears are confirmed the next day.|newspaper]] </tw-passagedata><tw-passagedata pid="36" name="getbriefcase" tags="" position="660,2066">You unlatch the briefcase, pulls out your flashlight, and peers inside.
+[[your fears are confirmed the next day.|newspaper]] </tw-passagedata><tw-passagedata pid="36" name="getbriefcase" tags="" position="660,2066">You unlatch the briefcase, pull out your flashlight, and peer inside.
 
 &quot;Wow.&quot; you heard yourself say. Inside were stacked wads of $100 dollar bills, filling the briefcase. That&#x27;s all. No identifcation, tracking device, nothing.
 
@@ -307,7 +307,7 @@ Might as well [[killstoreroom&lt;-clean up the storeroom]].
 
 You pull the trigger, there was a &quot;bang&quot;, and the convenience store is liberated from its owner. Simple.
 (set: $shotowner to true)
-[[Continue|robbery]]</tw-passagedata><tw-passagedata pid="43" name="The door of the store" tags="" position="829,1583">You run out of the store, jump into your getaway car, and was miles away from the scene before you hear the faintest sound of police sirens. Better than James on his skateboard, huh?
+[[Continue|robbery]]</tw-passagedata><tw-passagedata pid="43" name="The door of the store" tags="" position="829,1583">You run out of the store, jump into your getaway car, and were miles away from the scene before you hear the faintest sound of police sirens. Better than James on his skateboard, huh?
 
 (if: ($shotowner is not true) and ($shotfamily is not true) and ($tookmoney is not true))[The investigators might be puzzled that an armed intruder would leave a store without robbing or violence, but you know why: you&#x27;re just out of time. You remembered the frantic run through that forest when you were a kid; you&#x27;re smarter than that now. There will be other stores, and you still have a gun.(set:$robberyname to &quot;Failed Robbery&quot;)](elseif: ($tookmoney is not true))[The investigators will be surprised when they discover that no money was taken from the dead victims, but you know that money can be taken from everywhere. Good violence is harder to come by.(set: $robberyname to &quot;Wanton Killing&quot;)](elseif: ($shotowner is not true) and ($shotfamily is not true) and ($tookmoney is true))[Other people might consider sparing the owner and the family to be mercy, but you were just saving time.  You remembered the frantic run through that forest when you were a kid; since then you vowed to never be persued like that again.(set: $robberyname to &quot;Robbery&quot;)](else:)[You congratulate yourself for another violence-filled robbery. You like spilling blood, ever since you discovered how liberating it is to just leave Mark in the forest without looking back.(set: $robberyname to &quot;Killing and Robbery&quot;)]
 (set: $headline to $robberyname + &quot; Stuns Small Town&quot;)
