@@ -161,7 +161,7 @@ d) [[Tsundere Bay|easytest_end]]
 
 After half a week, Mr. Freeman returns the test. You snatch it up, and it reads, &quot;Score: (print: $testscore)/4&quot;.(set: $passtest to ($testscore &gt;= 3))
 
-(if: $passtest and $testscore &lt; 4)[[[cool.|scene5]]](elseif: $passtest)[Mr. Freeman beckons to you. &quot;Since you did so well on the test, I was wondering if you wanted to [[take the advanced exam?|advancedtest]]? Of course, it&#x27;s perfectly fine if you [[don&#x27;t want to|scene5]].](else:)[[[Oh, well, you guess you&#x27;re not smart enough.|scene5]]]</tw-passagedata><tw-passagedata pid="20" name="hardtest_q3" tags="" position="358,1337">3) Given that mumble mumble is mumble, what is the radius of the earth?
+(if: $passtest and $testscore &lt; 4)[[[cool.|scene5]]](elseif: $passtest)[Mr. Freeman beckons to you. &quot;Since you did so well on the test, I was wondering if you wanted to [[take the advanced exam.|advancedtest]] Of course, it&#x27;s perfectly fine if you [[don&#x27;t want to.|scene5]]](else:)[[[Oh, well, you guess you&#x27;re not smart enough.|scene5]]]</tw-passagedata><tw-passagedata pid="20" name="hardtest_q3" tags="" position="358,1337">3) Given that mumble mumble is mumble, what is the radius of the earth?
 
 a) [[10000km|hardtest_q4]]
 b) [[6,731,000,000,000mm|hardtest_q4]]
@@ -246,13 +246,13 @@ You tiptoe behind your mother. (if: (history:) contains &quot;takechocolate&quot
 
 (elseif: $passtest)[You bring the pipe down with one good whack, confident that, since all attention is good attention, the death of your mother from mysterious circumstances will only make you more famous as a doctor.(set: $headline to &quot;Famous doctor murdered own mother for attention&quot;)](elseif: (history:) contains &quot;stayandhelpmark&quot;)[With every whack of the pipe on her head, you remember your mom&#x27;s words: how you&#x27;ve failed like your dad, how she&#x27;d hoped you&#x27;ll be someone famous like Mark, how you&#x27;re never good enough. Well, you&#x27;ve had enough of being called not good enough.(set: $headline to &quot;Construction worker murdered own mother with lead pipe&quot;)](elseif: (history:) contains &quot;followjamesback&quot;)[By now the whacking of a pipe on a head to end a life is routine. There&#x27;s no difference in this case, not even if the target is your own mother.(set: $headline to &quot;Serial killer caught murdering own mother&quot;)]
 ...
-[[Next day&#x27;s news headlines|newspaper]]</tw-passagedata><tw-passagedata pid="32" name="conducting the operation" tags="" position="42,2107">As you help Mark into the operating room, you try to convince yourself that the deaths of the patients in the study was because of incompetent surgeons. After all, they&#x27;re not as good as you are. If there&#x27;s anyone who can pull off this complicated procedure, it&#x27;s you.
+[[Next day&#x27;s news headlines|newspaper]]</tw-passagedata><tw-passagedata pid="32" name="conducting the operation" tags="" position="41,2106">As you help Mark into the operating room, you try to convince yourself that the deaths of the patients in the study was because of incompetent surgeons. After all, they&#x27;re not as good as you are. If there&#x27;s anyone who can pull off this complicated procedure, it&#x27;s you.
 
 As the anesthesiologist begins to sedate Mark, you recall Mr. Freeman&#x27;s words from that review session years ago. &quot;don&#x27;t be afraid to experiment&quot;, he had said.
 
 Well, since this is an experimental procedure, it won&#x27;t hurt if you try to [[improve it a bit|operateexperiment]], right? After all, you&#x27;re so much more experienced than those researchers who were fresh out of medical school.
 
-No. You promised Mark&#x27;s wife that you&#x27;ll do the experimental procedure she&#x27;d heard about; what if she finds out you&#x27;d made changes? She might not agree and stop recommending you; you&#x27;ll lose your clients and your fame. (if: $testscore2 is 4 and (not ((history:) contains &quot;takechocolate&quot; or (history:) contains &quot;kickdog&quot;)))[[[better stick to the original procedure|operategood]]](else:)[[[better stick to the original procedure|operateoriginal]]]</tw-passagedata><tw-passagedata pid="33" name="decline the operation" tags="" position="190,2106">Diseases are funny things. They might not progress for years, then suddenly strike. That was the case with Mark: two days after he left your clinic, his condition started to rapidly degrade. Within a week he was dead.
+No. You promised Mark&#x27;s wife that you&#x27;ll do the experimental procedure she&#x27;d heard about; what if she finds out you&#x27;d made changes? She might not agree and stop recommending you; you&#x27;ll lose your clients and your fame. (if: $testscore2 is 1 and (not (((history:) contains &quot;takechocolate&quot;) or ((history:) contains &quot;kickdog&quot;))))[[[better stick to the original procedure|operategood]]](else:)[[[better stick to the original procedure|operateoriginal]]]</tw-passagedata><tw-passagedata pid="33" name="decline the operation" tags="" position="190,2106">Diseases are funny things. They might not progress for years, then suddenly strike. That was the case with Mark: two days after he left your clinic, his condition started to rapidly degrade. Within a week he was dead.
 
 The gossip magazines, eager to find out the last week of the life of the young billionaire, discovered that you, the most famous doctor in the country, had declined to save his life, instead choosing to save your own reputation.
 (set: $headline to &quot;Famous doctor refused treatment for billionare that would&#x27;ve saved his life&quot;)
@@ -327,13 +327,13 @@ One more stent. You suddenly feel a wave of fear: what if you&#x27;re wrong? For
 
 The second stent reaches its position, the heart monitor still displaying normal vitals. You breathe a sigh of relief.
 
-[[a week later|operategood_after]]</tw-passagedata><tw-passagedata pid="47" name="operategood_after" tags="" position="331,2408">Mark greets you with a smile on his hospital bed.
+[[a week later|operategood_after]]</tw-passagedata><tw-passagedata pid="47" name="operategood_after" tags="" position="335,2416">Mark greets you with a smile on his hospital bed.
 
 &quot;Thank you for your expertise. I&#x27;m feeling much better now.&quot; His speech is almost back to normal now - even the complex vocabulary is returning.
 
 &quot;Thank you for doing this for me.&quot;, he whispered
 
-You didn&#x27;t have the heart to tell him that for curing him, you were slapped with a permanent ban on practicing medicine. You&#x27;re still having trouble believing that it&#x27;s all over: no more lines of adoring patients, no more TV apperances as the expert in your field. No more being right all the time. Was it worth it? Perhaps it was worth it for a friend. (if: (history:) contains &quot;petdog&quot;)[And perhaps the universe will give you a pat on the back].
+You didn&#x27;t have the heart to tell him that for curing him, you were slapped with a permanent ban on practicing medicine. You&#x27;re still having trouble believing that it&#x27;s all over: no more lines of adoring patients, no more TV apperances as the expert in your field. No more being right all the time. Was it worth it? Perhaps it was worth it for a friend. (if: (history:) contains &quot;petdog&quot;)[And perhaps the universe will give you a pat on the back.]
 (set: $headline to &quot;Famous Doctor Caught Using Unapproved Treatment in Violation of Federal Law&quot;)
 [[Still, it&#x27;s hard not to look back on the headline that ended your career|newspaper]]</tw-passagedata><tw-passagedata pid="48" name="advancedtest" tags="" position="834,1187">A week later, you find yourself staring at yet another exam. This one is far more difficult than the other one, and you have trouble making out what some of the questions mean.
 
@@ -364,8 +364,7 @@ b) [[Blah blah|advancedtest_finish]]
 c) [[Mumble|advancedtest_finish]]
 d) [[I DON&#x27;T EVEN|advancedtest_finish]]</tw-passagedata><tw-passagedata pid="52" name="advancedtest_finish" tags="" position="624,1597">You hand in your test, confident that you&#x27;ve failed miserably on the test.
 
-Sure enough, after half a week, Mr. Freeman returns the test with bad news written on the header: &quot;Score: (print: $testscore)/4&quot;
-(set: $passtest to false)
+Sure enough, after half a week, Mr. Freeman returns the test with bad news written on the header: &quot;Score: (print: $testscore2)/4&quot;
 
 [[Oh, well, at least you did your best.|scene5]]</tw-passagedata></tw-storydata>
 
