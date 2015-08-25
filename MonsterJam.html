@@ -15,7 +15,9 @@
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
 
 
 
@@ -36,7 +38,7 @@ Don&#x27;t daudle too long; it&#x27;s almost time to [[head off to school|scene2
 [[Continue|scene1starthouse]]</tw-passagedata><tw-passagedata pid="3" name="petdog" tags="" position="131,309">You gently stroke the ears of your puppy, and the puppy responds with a joyful yelp.(set: $doginteracted to true)
 [[scene1starthouse&lt;-Continue]]</tw-passagedata><tw-passagedata pid="4" name="kickdog" tags="" position="592,307">You stroll up to the puppy and give it a kick to its behind.
 
-With a yelp the small dog flies across the room and hits the patio door. Through the door, you can see your mother turn her head to search the source of the noise, and after a second turn her head away again.
+With a yelp the small dog flies across the room and hits the patio door. Through the door, you can see your mother turn her head to search for the source of the noise, and after a second turn her head away again.
 (set: $doginteracted to true)
 [[Continue|scene1starthouse]]</tw-passagedata><tw-passagedata pid="5" name="feed the chocolate" tags="" position="439,300">You recall with glee of the TV program you watched yesterday. You know, the one where they said chocolate will poison dogs?
 
@@ -46,7 +48,7 @@ Within seconds, a small amount of foam begin to appear at the dog&#x27;s mouth.
 
 (set: $doginteracted to true)
 
-[[Continue|scene1starthouse]]</tw-passagedata><tw-passagedata pid="6" name="scene2start" tags="" position="358,438">You wave a quick goodbye to your mother, and to the puppy who is (if: (history:) contains &quot;feed the chocolate&quot;)[convulsing horribly](elseif: (history:) contains &quot;kickdog&quot;)[strugglingto get back up near the patio door](else:)[still wagging his tail], and set off to school.
+[[Continue|scene1starthouse]]</tw-passagedata><tw-passagedata pid="6" name="scene2start" tags="" position="358,438">You wave a quick goodbye to your mother, and to the puppy who is (if: (history:) contains &quot;feed the chocolate&quot;)[convulsing horribly](elseif: (history:) contains &quot;kickdog&quot;)[struggling to get back up near the patio door](else:)[still wagging his tail], and set off to school.
 
 On the street corner, a familiar voice greets you:
 
@@ -64,13 +66,13 @@ Mark stared at you. You guessed that Mark really wants to follow James - he&#x27
 
 Do you want to [[follow James and skip school|skipschool]] or [[go to school and face that test|gotoschool]]?</tw-passagedata><tw-passagedata pid="7" name="skipschool" tags="" position="358,588">&quot;Let&#x27;s roll, James&quot;, you replied. James pulls out his skateboard, jumps on it, motions you to catch up, and speeds away.
 
-Mark takes a hesitating look to the school, then turns around and runs after James. You do likewise.
+Mark takes a hesitating look towards the school, then turns around and runs after James. You do likewise.
 
 &quot;Here we go. Sweetest obstacle course I&#x27;ve ever seen.&quot; James announced.
 
 You three are on the edge of the woods north of No. 1 Street - a fence with a &quot;Do not trespass&quot; sign and a rather large hole is behind you.
 
-&quot;Last one to the lake solves algebra for fun!&quot;, James shouted as he started to jump on his board again.
+&quot;Last one to the lake solves algebra for fun!&quot;, James shouted.
 
 Mark mumbled, &quot;but I do enjoy algebra...&quot;
 
@@ -106,11 +108,11 @@ James mumbled, &quot;If my mom finds out about this, I&#x27;m dead.&quot; Then h
 
 By now you&#x27;re pretty scared - the adrenaline from the run has worn off; you can hear sirens - so the police is still looking for trespassers; you wonder if you should [[follow James back to school, leaving Mark behind|followjamesback]] or [[stay and help Mark|stayandhelpmark]].</tw-passagedata><tw-passagedata pid="10" name="followjamesback" tags="" position="358,887">As you near the school, you wonder if you should tell the school nurse about what happened to Mark. But before you can think of a good enough lie Mr. Freeman sights you, and shouts, &quot;What are you two waiting there for? The test&#x27;s about to start! You already missed the whole review session!&quot;
 
-Oh well, might as well [[finish the test|hardtest]]. Mark&#x27;ll be alright.</tw-passagedata><tw-passagedata pid="11" name="stayandhelpmark" tags="" position="508,888">&quot;Don&#x27;t worry, Mark!&quot;, you shout, but you know that you can&#x27;t do first aid. What to do?
+Oh well, might as well [[finish the test|hardtest]]. Mark&#x27;ll be alright.</tw-passagedata><tw-passagedata pid="11" name="stayandhelpmark" tags="" position="508,888">&quot;Don&#x27;t worry, Mark!&quot;, you shout, but you know that you can&#x27;t do first aid. What now?
 
 &quot;I see you kiddos been trespassing here&quot;, chimed a voice behind us. A police officer showed up. &quot;and looks like your friend here already paid the price for it. Take the one with the broken leg to hospital, and take the other back to school.&quot;
 
-This is it, then. Caught by the police. At least they&#x27;re not punishing us; they&#x27;re just taking Mark to hospital and [[taking me back to school]].</tw-passagedata><tw-passagedata pid="12" name="taking me back to school" tags="" position="508,1038">The police officer stops at the school, and pulled me to the front desk of the school, where he explained that Mark and I had been caught skipping school and that Mark&#x27;s been injured. You start to wonder if Mark would be all right, but Mr. Freeman sights you, and shouts, &quot;What are you doing here for? The test&#x27;s about to start! You already missed the whole review session!&quot;
+This is it, then. Caught by the police. At least they&#x27;re not punishing us; they&#x27;re just taking Mark to hospital and [[taking me back to school]].</tw-passagedata><tw-passagedata pid="12" name="taking me back to school" tags="" position="508,1038">The police officer stops at the school, and pulled me to the front desk of the school, where he explained that Mark and I had been caught skipping and that Mark&#x27;s been injured. You start to wonder if Mark would be all right, but Mr. Freeman sights you, and shouts, &quot;What are you doing here for? The test&#x27;s about to start! You already missed the whole review session!&quot;
 
 Sigh. Might as well [[face the test|hardtest]].</tw-passagedata><tw-passagedata pid="13" name="hardtest" tags="" position="358,1035">You stare at the test paper in front of you, heart still pounding from the chase.
 (set: $testscore to 0)
@@ -125,8 +127,8 @@ c) [[Write ahead logging is used in the production of multi-level page tables, w
 d) [[Hackers use superpages to reduce the signal-to-noise ratio of EEL, which is a function of signal-to-noise ratio.|hardtest_q2]]</tw-passagedata><tw-passagedata pid="14" name="hardtest_q2" tags="" position="358,1187">2) According to Nietzsche, what doe a blah need to do to become an Ubermensch?
 
 a) [[Choose master morality over slave morality by setting the jumper on your IDE drive in order to exchange truths for illusions|hardtest_q3]]
-b) [[find the spell of reality that creates this vulgar and vast perspective and run spell check upon it|hardtest_q3]]
-c) [[love your enemies and hate your friends in equal measure where the measure, k, is a function of partial pressures|hardtest_q3]]
+b) [[Find the spell of reality that creates this vulgar and vast perspective and run spell check upon it|hardtest_q3]]
+c) [[Love your enemies and hate your friends in equal measure where the measure, k, is a function of partial pressures|hardtest_q3]]
 d) [[Remove causality, correctness, and expression between spheres until only aesthetic relations remain|hardtest_q3]]</tw-passagedata><tw-passagedata pid="15" name="easytest" tags="" position="508,737">You stare at the test paper in front of you, and feel a weight lifted from your shoulder. After the review session, the test didn&#x27;t seem hard at all.
 
 (set: $testscore to 0)
@@ -171,7 +173,7 @@ d) [[MINECRAFT|hardtest_q4]]</tw-passagedata><tw-passagedata pid="21" name="hard
 a) [[Blah|hardtest_finish]]
 b) [[Blah blah|hardtest_finish]]
 c) [[Mumble|hardtest_finish]]
-d) [[I DON&#x27;T EVEN|hardtest_finish]]</tw-passagedata><tw-passagedata pid="22" name="hardtest_finish" tags="" position="358,1629">You hand in your test, confident that you&#x27;ve failed miserably on the test.
+d) [[I DON&#x27;T EVEN|hardtest_finish]]</tw-passagedata><tw-passagedata pid="22" name="hardtest_finish" tags="" position="358,1629">You hand in your test, confident that you&#x27;ve failed miserably.
 
 Sure enough, after half a week, Mr. Freeman returns the test with bad news written on the header: &quot;Score: (print: $testscore)/4&quot;
 (set: $passtest to false)
@@ -179,7 +181,7 @@ Sure enough, after half a week, Mr. Freeman returns the test with bad news writt
 [[Oh, well.|scene5]]</tw-passagedata><tw-passagedata pid="23" name="scene5" tags="" position="358,1776">...
 ...
 
-Yawn. another (if: (history:) contains &quot;stayandhelpmark&quot;)[evening](else:)[morning] in the house you&#x27;ve lived in for... 25? 29? (you think.) years.
+Yawn. another (if: (history:) contains &quot;stayandhelpmark&quot;)[evening](else:)[morning] in the house you&#x27;ve lived in for... 27? 28? (you think.) years.
 
 Not much changed during all these years: there&#x27;s still a table in the middle of the living room. (if: (history:) contains &quot;feed the chocolate&quot;)[The only addition is a small headstone labelled &quot;Here lies Puppy&quot; in the yard.](else:)[{
 Puppy - whom everyone still calls &quot;puppy&quot; by force of habit, even though it&#x27;s now become quite a misnomer for an old dog - still wags his tail. When he spots you, he
@@ -189,7 +191,7 @@ Puppy - whom everyone still calls &quot;puppy&quot; by force of habit, even thou
 (if: $passtest)[Your mother greets you with a smile. &quot;I can&#x27;t believe my baby&#x27;s finally moving out soon! Your new place looks great - just what the most famous doctor in the country deserves!&quot;
 No time to talk about home renovations: it&#x27;s almost time to go to [[your office]].](elseif: (history:) contains &quot;followjamesback&quot;)[Your mother greets you with a sob. &quot;I thought I&#x27;d escaped cruel idiots when I left your dad, but then I had to put up with you: always in and out of the jail every other week. Get out, get out from my house!&quot;
 Well, you do need to [[get out of the house|robbery]], but mostly because you&#x27;re running low on cash.](else:)[Your mother greets you with a sigh. &quot;Just like your dad. When you were young, you were just as smart as him, but he wasted his smarts and came to no good. I had hoped you wouldn&#x27;t follow his path, but here you are, just a construction worker. &#x27;Least you&#x27;ve finally earned enough from those night shifts to rent your own place.&quot;
-Yep, there&#x27;s another one of those [[night shifts|nightshift]] happening today.]
+Yep, there&#x27;s another one of those [[night shifts|nightshift]] today.]
 (if: $haspipe is true)[You&#x27;re holding a [[heavy lead pipe|swingpipe]].]
 (if: $pg13 is not true)[Before you go, you can also visit the [[storage room]].]</tw-passagedata><tw-passagedata pid="24" name="storage room" tags="" position="361,1927">Dusty room where odds and ends are kept. The machinery that keeps the house running is also here: gas and water lines, electrical panels, the works.
 (if: $haspipe is not true)[You can see a [[heavy lead pipe]] here, left over from the last time the house was renovated thirty years ago.]
@@ -200,24 +202,24 @@ The door opens and a young couple walk through the door, the young man being ste
 
 &quot;Mark! Long time no see! Come and have a seat and we&#x27;ll discuss your options.&quot;
 
-As every gossip magazine is quick to point out, Mark, your old friend and the genius who had designed a social network in high school that made him a billionare by age 23, was stricken with a neurodegenerative disease at 25. You can just detect a hint of a tremor as he sat down slowly besides his wife on a bench in the waiting area.
+As every gossip magazine is quick to point out, Mark, your old friend and the genius who had designed a social network in high school that made him a billionare by age 23, was stricken with a neurodegenerative disease at 26. You can just detect a hint of a tremor as he sat down slowly besides his wife on a bench in the waiting area.
 
 &quot;I&#x27;ve looked at the treatment options: the current state of the art options only slows down the progression of the disease. Even I cannot cure the disease entirely.&quot;
 
 &quot;But we&#x27;ve looked up recent advances in the area, and we know that there is research done with plaque levels in the brain; they suggests an operation to enhance circulation might be a cure!&quot; Mark&#x27;s wife argued.
 
-&quot;That option&#x27;s too risky: operating on the brain&#x27;s blood vessels can easily lead to a stroke, and twenty out of the thirty experimental subjects on that study died on the operating table. I can&#x27;t risk my reputation on a dangerous experiment.&quot; you responded.
+&quot;That option&#x27;s too risky: operating on the brain&#x27;s blood vessels can easily lead to a stroke, and twenty out of the thirty experimental subjects in that study died on the operating table. I can&#x27;t risk my reputation on a dangerous experiment.&quot; you responded.
 
 &quot;P-please, h-help me, bu-ddy.&quot; Mark spoke for the first time, trembling slightly with each word. You&#x27;ve never expected Mark&#x27;s condition to have advanced by this much.
 
 You remember that test you took with Mark, years ago - you were unprepared, took a chance, and did well anyways. Perhaps you should try [[conducting the operation]] with the same attitude.
-Then again, there&#x27;s no review session to save you this time. Perhaps it might be wise to [[decline the operation]].</tw-passagedata><tw-passagedata pid="26" name="nightshift" tags="" position="511,1927">The sun was setting when you arrived at the work site. You were the last one to arrive again. Never fast enough. Even when you&#x27;re young you can&#x27;t catch up to James when you run. Now, everyone&#x27;s faster than you.
+Then again, there&#x27;s no review session to save you this time. Perhaps it might be wise to [[decline the operation]].</tw-passagedata><tw-passagedata pid="26" name="nightshift" tags="" position="511,1927">The sun was setting when you arrived at the work site. You were the last one to arrive again. Never fast enough. Even when you were young you never could run as fast as James. Now, everyone&#x27;s faster than you.
 
 Hours pass, with you just doing supply runs from the ground level up to the higher floors. Even after you&#x27;ve been working on the project for months, you&#x27;re still stuck with the boring tasks because you&#x27;re not good enough. Typical response.
 
-You&#x27;re about to make one last delivery during your shfit when your toe bumps into something heavy on the ground. That wasn&#x27;t there the last time you went up the lift.
+You&#x27;re about to make one last delivery during your shift when your toe bumps into something heavy on the ground. That wasn&#x27;t there the last time you went up the lift.
 
-[[It looks like a full briefcase.|getbriefcase]]</tw-passagedata><tw-passagedata pid="27" name="robbery" tags="" position="659,1927">Guns are not easy to obtain, but the intimidation value of pointing a gun at someone&#x27;s head is worth the effort. In this case, &quot;someone&quot; is the owner of the convinience store in this unfamiliar small town.
+[[It looks like a full briefcase.|getbriefcase]]</tw-passagedata><tw-passagedata pid="27" name="robbery" tags="" position="659,1927">Guns are not easy to obtain, but the intimidation value of pointing a gun at someone&#x27;s head is worth the effort. In this case, &quot;someone&quot; is the owner of the convenience store in this unfamiliar small town.
 
 (if: $shotowner is not true)[&quot;You can take the money! Just don&#x27;t hurt my wife and kids!&quot; He squirms with his hands up at gunpoint.
 
@@ -240,7 +242,7 @@ Well, it&#x27;s time to apply that to this house. (elseif: $passtest)[You open t
 Since 1856
 $1.00 ($1.25 in outlying areas)
 ## (print: $headline)
-### Public appalled at monstrous act</tw-passagedata><tw-passagedata pid="31" name="swingpipe" tags="" position="110,1927">A heavy object colliding with living flesh at speed will result in broken bones and blood. You (if: (history:) contains &quot;skipschool2&quot;)[remember how easily the tree trunk snapped Mark&#x27;s leg like a twig, and](if: $passtest)[have seen plenty of broken limbs from back when you were working in the emergency room, before you made a name for yourself.](elseif: (history:) contains &quot;stayandhelpmark&quot;)[recall the inevitable injuries and deaths when lifting construction materials in the wind.](elseif: (history:) contains &quot;followjamesback&quot;)[know just how easy it is to break bones from all your practice on your victims.]
+### Public Appalled at Monstrous Act</tw-passagedata><tw-passagedata pid="31" name="swingpipe" tags="" position="110,1927">A heavy object colliding with living flesh at speed will result in broken bones and blood. You (if: (history:) contains &quot;skipschool2&quot;)[remember how easily the tree trunk snapped Mark&#x27;s leg like a twig, and](if: $passtest)[have seen plenty of broken limbs from back when you were working in the emergency room, before you made a name for yourself.](elseif: (history:) contains &quot;stayandhelpmark&quot;)[recall the inevitable injuries and deaths when lifting construction materials in the wind.](elseif: (history:) contains &quot;followjamesback&quot;)[know just how easy it is to break bones from all your practice on your victims.]
 
 You tiptoe behind your mother. (if: (history:) contains &quot;takechocolate&quot;)[For a second you remind yourself of that kid who once tiptoed to take off the table a piece of chocolate. You&#x27;ll be taking a life this time.]
 
@@ -255,26 +257,26 @@ Well, since this is an experimental procedure, it won&#x27;t hurt if you try to 
 No. You promised Mark&#x27;s wife that you&#x27;ll do the experimental procedure she&#x27;d heard about; what if she finds out you&#x27;d made changes? She might not agree and stop recommending you; you&#x27;ll lose your clients and your fame. (if: $testscore2 is 1 and (not (((history:) contains &quot;takechocolate&quot;) or ((history:) contains &quot;kickdog&quot;))))[[[better stick to the original procedure|operategood]]](else:)[[[better stick to the original procedure|operateoriginal]]]</tw-passagedata><tw-passagedata pid="33" name="decline the operation" tags="" position="190,2106">Diseases are funny things. They might not progress for years, then suddenly strike. That was the case with Mark: two days after he left your clinic, his condition started to rapidly degrade. Within a week he was dead.
 
 The gossip magazines, eager to find out the last week of the life of the young billionaire, discovered that you, the most famous doctor in the country, had declined to save his life, instead choosing to save your own reputation.
-(set: $headline to &quot;Famous doctor refused treatment for billionare that would&#x27;ve saved his life&quot;)
-[[you already knew what the headlines would say.|newspaper]]</tw-passagedata><tw-passagedata pid="34" name="operateexperiment" tags="" position="40,2257">You insert the first two stents into Mark&#x27;s brain. His blood pressure is normal; no sign of hemorraging. Good.
+(set: $headline to &quot;Famous Doctor Refused To Save Life of Billionare&quot;)
+[[you already knew what the headlines would say.|newspaper]]</tw-passagedata><tw-passagedata pid="34" name="operateexperiment" tags="" position="40,2257">You insert the first two stents into Mark&#x27;s brain. His blood pressure is normal; no sign of hemorrhaging. Good.
 
-Now, you require two more stents. The nurse gives you a puzzling look, but hands them to you just the same. You know that the study avoided placing more than two stents because of high risk, even though in theory the most stents placed, the more effective the treatment. But you can pull this off.
+Now, you ask for two more stents. The nurse gives you a puzzling look, but hands them to you just the same. You know that the study avoided placing more than two stents because of high risk, even though in theory the most stents placed, the more effective the treatment. But you can pull this off.
 
 One more stent in place. Normal vitals.
 
 One last stent. Suddenly the heart monitor beeps loudly. The anesthesiologist shouts, &quot;I can&#x27;t keep the blood pressure stable!&quot; You know why blood pressure&#x27;s decreasing: blood is spouting from Mark&#x27;s brain like an open faucet.
 
 As the heart monitor settles to a steady beep indicating no signs of life, (if: ((history:) contains &quot;kickdog&quot;) or ((history:) contains &quot;feed the chocolate&quot;))[you recall your helpless puppy lying in a pile on the floor. Amidst the chaos, ]you allow yourself to think of what the news headlines tomorrow would do to your reputation.
-(set: $headline to &quot;Famous doctor murders billionare with &#x27;surgery experiment&#x27;&quot;)
-[[your fears are confirmed the next day.|newspaper]] </tw-passagedata><tw-passagedata pid="35" name="operateoriginal" tags="" position="192,2256">You insert the first stent into Mark&#x27;s brain. His blood pressure is normal; no sign of hemorraging. Good. Unlike the doctors from the study, you have the skills to successfully perform this operation.
+(set: $headline to &quot;Famous Doctor Murders Billionare With &#x27;Surgery Experiment&#x27;&quot;)
+[[your fears are confirmed the next day.|newspaper]] </tw-passagedata><tw-passagedata pid="35" name="operateoriginal" tags="" position="192,2256">You insert the first stent into Mark&#x27;s brain. His blood pressure is normal; no sign of hemorrhaging. Good. Unlike the doctors from the study, you have the skills to successfully perform this operation.
 
 One more stent. Suddenly the heart monitor beeps loudly. The anesthesiologist shouts, &quot;I can&#x27;t keep the blood pressure stable!&quot; You know why blood pressure&#x27;s decreasing: blood is spouting from Mark&#x27;s brain like an open faucet.
 
 As the heart monitor settles to a steady beep indicating no signs of life, (if: ((history:) contains &quot;kickdog&quot;) or ((history:) contains &quot;feed the chocolate&quot;))[you remember your helpless puppy lying in a pile on the floor. Amidst the chaos, ]you allow yourself to think of what the news headlines tomorrow would do to your reputation.
-(set: $headline to &quot;Famous doctor kills billionare with risky and unproven treatment&quot;)
-[[your fears are confirmed the next day.|newspaper]] </tw-passagedata><tw-passagedata pid="36" name="getbriefcase" tags="" position="660,2066">You unlatch the briefcase, pull out your flashlight, and peer inside.
+(set: $headline to &quot;Famous Doctor Kills Billionare With Risky Unproven Treatment&quot;)
+[[your fears are confirmed the next day.|newspaper]] </tw-passagedata><tw-passagedata pid="36" name="getbriefcase" tags="" position="660,2066">You unlatch the briefcase, pulls out your flashlight, and peers inside.
 
-&quot;Wow.&quot; you heard yourself say. Inside were stacked wads of $100 dollar bills, filling the briefcase. That&#x27;s all. No identifcation, tracking device, nothing.
+&quot;Wow.&quot; you heard yourself say. Inside were stacked wads of 100 dollar bills, filling the briefcase. That&#x27;s all. No identifcation, personal effects, nothing.
 
 You&#x27;ve never seen this much money in one place before. With this much money, nobody would be able to say you&#x27;re not good enough. (if: ((history:) contains &quot;kickdog&quot;) or ((history:) contains &quot;feed the chocolate&quot;))[You&#x27;ll be able to take revenge on all those who doubted you.](else:)[You&#x27;ll be able to go back to school and get a second chance at life.] You start walking towards the lift to [[leave the worksite]] with the briefcase.
 
@@ -283,11 +285,11 @@ But wait. Shouldn&#x27;t you [[take the money to your boss]]? After all, (if: ((
 (if: $pg13 is false)[Or maybe, since you&#x27;re going to the lift anyways, it&#x27;s time to [[go up a few levels]] and do the thing you&#x27;ve been longing to these past few months.]</tw-passagedata><tw-passagedata pid="37" name="leave the worksite" tags="" position="660,2216">How were you supposed to know that federal agents were waiting outside the gate of the construction site, waiting to tackle and arrest the person who held the briefcase? Or to know that the briefcase of cash is part of a sting operation to uncover your boss&#x27; connection to the mafia? Nobody&#x27;s smart enough to figure that out, you know. This isn&#x27;t your fault.
 
 Still, in the small jail cell, you can&#x27;t help but think that, if you were only a bit smarter, a bit better, you could&#x27;ve been rich instead of spending the rest of your life in this cell.
-(set: $headline to &quot;Gang influence growing: Construction worker caught aiding mafia&quot;)
-[[you remember what the newspapers called you when you were arrested.|newspaper]]</tw-passagedata><tw-passagedata pid="38" name="take the money to your boss" tags="" position="810,2216">How were you supposed to know that federal agents were waiting for your boss to receive the money in his office? That they would arrest all in the room as soon you handed the cash to the boss, confident that you were in on the boss&#x27; scheme? Or to know that the briefcase of cash&#x27;s part of a sting operation to uncover your boss&#x27; connection to the mafia? Nobody&#x27;s smart enough to figure that out, you know. This isn&#x27;t your fault.
+(set: $headline to &quot;Gang Influence Growing: Construction Worker Caught Aiding Mafia&quot;)
+[[You remember what the newspapers called you when you were arrested.|newspaper]]</tw-passagedata><tw-passagedata pid="38" name="take the money to your boss" tags="" position="810,2216">How were you supposed to know that federal agents were waiting for your boss to receive the money in his office? That they would arrest everyone in the room as soon you handed the cash to the boss, confident that you were in on the boss&#x27; scheme? Or to know that the briefcase of cash&#x27;s part of a sting operation to uncover your boss&#x27; connection to the mafia? Nobody&#x27;s smart enough to figure that out, you know. This isn&#x27;t your fault.
 
 Still, in the small jail cell, you can&#x27;t help but think that, if you were only a bit smarter, a bit better, you could&#x27;ve been rich instead of spending the rest of your life in this cell.
-(set: $headline to &quot;Gang influence growing: Construction worker caught aiding mafia&quot;)
+(set: $headline to &quot;Gang Influence Growing: Construction Worker Caught Aiding Mafia&quot;)
 [[you remember what the newspapers called you when you were arrested.|newspaper]]</tw-passagedata><tw-passagedata pid="39" name="go up a few levels" tags="" position="960,2217">You&#x27;ve seen a lot of the explosives technician these past few weeks. You&#x27;ve seen the fancy equipment that you&#x27;ll never be able to operate, the handsome uniform and name tag that shows that he is of a higher-paid class of contractor compared to you and your highvis vest, and his smartphone that constantly beeps with new job opportunities you only dream of. (text-colour: &quot;rgba(0,0,0,0)&quot;)[And his name is JOHN CENAAAAAAAAAAAAAAAAAAAAAAA]
 
 Most importantly, you&#x27;ve seen where he stores his explosives and blasting caps.
@@ -307,7 +309,7 @@ Might as well [[killstoreroom&lt;-clean up the storeroom]].
 
 You pull the trigger, there was a &quot;bang&quot;, and the convenience store is liberated from its owner. Simple.
 (set: $shotowner to true)
-[[Continue|robbery]]</tw-passagedata><tw-passagedata pid="43" name="The door of the store" tags="" position="829,1583">You run out of the store, jump into your getaway car, and were miles away from the scene before you hear the faintest sound of police sirens. Better than James on his skateboard, huh?
+[[Continue|robbery]]</tw-passagedata><tw-passagedata pid="43" name="The door of the store" tags="" position="829,1583">You run out of the store, jump into your getaway car, and was miles away from the scene before you hear the faintest sound of police sirens. Better than James on his skateboard, huh?
 
 (if: ($shotowner is not true) and ($shotfamily is not true) and ($tookmoney is not true))[The investigators might be puzzled that an armed intruder would leave a store without robbing or violence, but you know why: you&#x27;re just out of time. You remembered the frantic run through that forest when you were a kid; you&#x27;re smarter than that now. There will be other stores, and you still have a gun.(set:$robberyname to &quot;Failed Robbery&quot;)](elseif: ($tookmoney is not true))[The investigators will be surprised when they discover that no money was taken from the dead victims, but you know that money can be taken from everywhere. Good violence is harder to come by.(set: $robberyname to &quot;Wanton Killing&quot;)](elseif: ($shotowner is not true) and ($shotfamily is not true) and ($tookmoney is true))[Other people might consider sparing the owner and the family to be mercy, but you were just saving time.  You remembered the frantic run through that forest when you were a kid; since then you vowed to never be persued like that again.(set: $robberyname to &quot;Robbery&quot;)](else:)[You congratulate yourself for another violence-filled robbery. You like spilling blood, ever since you discovered how liberating it is to just leave Mark in the forest without looking back.(set: $robberyname to &quot;Killing and Robbery&quot;)]
 (set: $headline to $robberyname + &quot; Stuns Small Town&quot;)
@@ -318,14 +320,14 @@ The investigators won&#x27;t figure out who did this: they never do. After all, 
 (set: $shotfamily to true)
 [[Continue|robbery]]</tw-passagedata><tw-passagedata pid="45" name="sirens at the door" tags="" position="625,1789">Before you can run away, the police busts through the door.(if: (history:) contains &quot;skipschool&quot;)[For a second you remember running with James as the police chases you for trespassing - but no. This time it&#x27;s no mere trespassing, and you can&#x27;t run fast enough to evade the police now preparing for a takedown.]
 
-The police tackles you to the ground: as you struggle to breathe you now know what a puppy feels(if: (history:) contains &quot;feed the chocolate&quot;)[as it twitches to try to escape death](elseif: (history:) contains &quot;kickdog&quot;)[ as it braces itself for a kicking](else:)[ when it expected a treat but got a slap instead].
+The police tackles you to the ground: as you struggle to breathe, you now know what a puppy feels(if: (history:) contains &quot;feed the chocolate&quot;)[as it twitches to try to escape death](elseif: (history:) contains &quot;kickdog&quot;)[ as it braces itself for a kicking](else:)[ when it expected a treat but got a slap instead].
 
 (set: $headline to &quot;Armed Robbery Attempt Foiled By Police&quot;)
-[[You see the headline next morning in your jail cell.|newspaper]]</tw-passagedata><tw-passagedata pid="46" name="operategood" tags="" position="331,2258">You insert the first stent into Mark&#x27;s brain. His blood pressure is normal; no sign of hemorraging. Good. Unlike the doctors from the study, you have the skills to successfully perform this operation.
+[[You see the headline next morning in your jail cell.|newspaper]]</tw-passagedata><tw-passagedata pid="46" name="operategood" tags="" position="331,2258">You insert the first stent into Mark&#x27;s brain. His blood pressure is normal; no sign of hemorrhaging. Good. Unlike the doctors from the study, you have the skills to successfully perform this operation.
 
-One more stent. You suddenly feel a wave of fear: what if you&#x27;re wrong? For someone who has spent your entire life knowing that you&#x27;re right, it&#x27;s a strange feeling to doubt yourself for the first time since... a long time ago, back in 7th grade?. You remember deciding whether to face your fears to help a friend get into a good program or to escape from what you thought was going to be the test to end all tests. You choose to help your friend, and you were right. Now, you&#x27;re choosing to help your friend again, and it&#x27;ll be all right.
+One more stent. You suddenly feel a wave of fear: what if you&#x27;re wrong? For someone who has spent your entire life knowing that you&#x27;re right, it&#x27;s a strange feeling to doubt yourself for the first time since... a long time ago, back in 7th grade? Back then, you decided whether to face your fears to help a friend get into a good program or to escape from what you thought was going to be the test to end all tests. You chose to help your friend, and you were right. Now, you&#x27;re choosing to help your friend again, and it&#x27;ll be all right.
 
-The second stent reaches its position, the heart monitor still displaying normal vitals. You breathe a sigh of relief.
+The second stent reaches its final position, the heart monitor still displaying normal vitals. You breathe a sigh of relief.
 
 [[a week later|operategood_after]]</tw-passagedata><tw-passagedata pid="47" name="operategood_after" tags="" position="335,2416">Mark greets you with a smile on his hospital bed.
 
@@ -350,8 +352,8 @@ c) [[Write ahead logging is used in the production of multi-level page tables, w
 d) [[Hackers use superpages to reduce the signal-to-noise ratio of EEL, which is a function of signal-to-noise ratio.|advancedtest_q2]]</tw-passagedata><tw-passagedata pid="49" name="advancedtest_q2" tags="" position="978,1190">2) According to Nietzsche, what doe a blah need to do to become an Ubermensch?
 
 a) [[Choose master morality over slave morality by setting the jumper on your IDE drive in order to exchange truths for illusions|advancedtest_q3]]
-b) [[find the spell of reality that creates this vulgar and vast perspective and run spell check upon it|advancedtest_q3]]
-c) [[love your enemies and hate your friends in equal measure where the measure, k, is a function of partial pressures|advancedtest_q3]]
+b) [[Find the spell of reality that creates this vulgar and vast perspective and run spell check upon it|advancedtest_q3]]
+c) [[Love your enemies and hate your friends in equal measure where the measure, k, is a function of partial pressures|advancedtest_q3]]
 d) [[Remove causality, correctness, and expression between spheres until only aesthetic relations remain|advancedtest_q3]]</tw-passagedata><tw-passagedata pid="50" name="advancedtest_q3" tags="" position="978,1328">3) Given that mumble mumble is mumble, what is the radius of the earth?
 
 a) [[10000km|advancedtest_q4]]
